@@ -1,5 +1,5 @@
 # <a href="#Khách hàng">Khách hàng</a>
-## [Danh sách khách hàng](#Danh sách khách hàng)
+## <a href="#Danh sách">Danh sách</a>
 Tìm kiếm khách hàng của đại lý
 > **API:** /rms/v1/customer/search  
 > **Phương thức:** POST  
@@ -12,7 +12,7 @@ Tìm kiếm khách hàng của đại lý
 }
 ```
 
-## [Tạo mới khách hàng](#Tạo mới khách hàng)
+## <a href="#Tạo mới">Tạo mới</a>
 Tạo một khách hàng mới
 > **API:** /rms/v1/customer/create
 > **Phương thức:** POST  
@@ -31,7 +31,7 @@ Tạo một khách hàng mới
 }
 ```
 
-## [Cập nhật thông tin khách hàng](#Cập nhật thông tin khách hàng)
+## <a href="#Cập nhật thông tin">Cập nhật thông tin</a>
 Cập nhật thông tin khách hàng
 > **API:** /rms/v1/customer/update
 > **Phương thức:** POST  
@@ -49,7 +49,7 @@ Cập nhật thông tin khách hàng
 }
 ```
 
-## [Lấy thông tin khách hàng](#Lấy thông tin khách hàng)
+## ## <a href="#Lấy thông tin">Lấy thông tin</a>
 Lấy thông tin khách hàng qua id
 > **API:** /rms/v1/customer/detail
 > **Phương thức:** POST  
