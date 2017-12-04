@@ -1,5 +1,5 @@
-# [Link-name2](#Header2)
-## [CONTRIBUTE](.#4---contribute)
+# [Khách hàng](#Khách hàng)
+## [Danh sách khách hàng](#Danh sách khách hàng)
 Tìm kiếm khách hàng của đại lý
 > **API:** /rms/v1/customer/search  
 > **Phương thức:** POST  
