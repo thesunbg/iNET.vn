@@ -1,5 +1,5 @@
-# [Khách hàng](#Khách hàng)
-## [Danh sách khách hàng](#Danh sách khách hàng)
+# <a href="#wiki-foo">Foo</a>
+## [CONTRIBUTE](.#4---contribute)
 Tìm kiếm khách hàng của đại lý
 > **API:** /rms/v1/customer/search  
 > **Phương thức:** POST  
