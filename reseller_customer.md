@@ -1,4 +1,4 @@
-# [Khách hàng](#Khách hàng)
+# <a href="#Khách hàng">Khách hàng</a>
 ## [Danh sách khách hàng](#Danh sách khách hàng)
 Tìm kiếm khách hàng của đại lý
 > **API:** /rms/v1/customer/search  
