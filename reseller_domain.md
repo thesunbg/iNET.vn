@@ -1,4 +1,5 @@
 # [Tên miền](#domain)
+* [Danh sách](#danh-sách)
 ## [Danh sách](#search)
 Tìm kiếm danh sách tên miền của đại lý
 > **API:** /api/rms/v1/domain/search  
