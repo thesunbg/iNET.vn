@@ -15,13 +15,13 @@ Tìm kiếm khách hàng của đại lý
    "toCreatedDate": "01/01/2017 00:00"
 }
 ```
-email: email khách hàng  
-ullname: tên đầy đủ   
-phone: số điện thoại  
-page: trang, mặc định 0  
-pageSize: số lượng KH lấy về, mặc định 30  
-fromCreatedDate: ngày tạo mới từ  
-toCreatedDate: ngày tạo mới tới  
+**email**: email khách hàng  
+**fullname**: tên đầy đủ   
+**phone**: số điện thoại  
+**page**: trang, mặc định 0  
+**pageSize**: số lượng KH lấy về, mặc định 30  
+**fromCreatedDate**: ngày tạo mới từ  
+**toCreatedDate**: ngày tạo mới tới  
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
