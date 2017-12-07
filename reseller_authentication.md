@@ -13,7 +13,7 @@ Hệ thống sử dụng chuẩn phương thức JSON Web Tokens(RFC 7519).
    "password": "yourpassword"
 }
 ```
-"email": Email tài khoản được cung cấp cho đại lý
+"email": Email tài khoản được cung cấp cho đại lý  
 "password": Mật khẩu tài khoản được cung cấp cho đại lý
 
 > **Dữ liệu trả về(JSON):**   
