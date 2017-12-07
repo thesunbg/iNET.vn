@@ -73,7 +73,7 @@ Cập nhật mật khẩu đăng nhập của khách hàng
    "passwordForgotToken": "token"//
 }
 ```
-[passwordForgotToken](https://github.com/thesunbg/iNET.vn/edit/master/reseller_customer.md#forgotpassword)
+[passwordForgotToken](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)
 
 ## [Lấy thông tin](#get)
 Lấy thông tin khách hàng qua id
