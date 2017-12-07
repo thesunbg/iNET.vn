@@ -1,5 +1,18 @@
 # [Tên miền](#domain)
 * [Danh sách](#danh-sách)
+* [Kiểm tra sự tồn tại](#kiểm-tra-sự-tồn-tại)
+* [Chuyển mã punycode cho tên miền tiếng việt](#chuyển-mã-puny-code-tên-miền-tiếng-việt)
+* [Đăng ký mới](#Đăng-ký-mới)
+* [Duy trì](#duy-trì)
+* [Ẩn thông tin](#Ẩn-thông-tin-tên-miền)
+* [Chi tiết thông tin tên miền](#thông-tin-tên-miền)
+* [Cập nhật nameserver](#cập-nhật-nameserver)
+* [Cập nhật nameserver theo tên miền(childdns)](#cập-nhật-nameserver-theo-tên-miền)
+* [Thông tin bản ghi](#thông-tin-bản-ghi-tên-miền)
+* [Cập nhật bản ghi](#cập-nhật-bản-ghi-tên-miền)
+* [Gửi lại email xác nhận](#gửi-lại-email-để-xác-nhận)
+* [Đổi mã auth code](#Đổi-mã-auth-code)
+* [Đổi mật khẩu đăng nhập](#Đổi-mật-khẩu-đăng-nhập)
 ## [Danh sách](#search)
 Tìm kiếm danh sách tên miền của đại lý
 > **API:** /api/rms/v1/domain/search  
