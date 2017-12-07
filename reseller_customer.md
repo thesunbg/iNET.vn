@@ -41,15 +41,15 @@ Tạo một khách hàng mới
    "phone": "Điện thoại 1",
 }
 ```
-email*: email khách hàng  
-password*: mật khẩu  
-fullname*: tên đầy đủ, bao gồm cả họ  
-organizationName: tên tổ chức  
-gender: giới tính, ['male', 'female']  
-country: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
-province: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
-address*: địa chỉ  
-phone*: số điện thoại  
+**email(bắt buộc)**: email khách hàng  
+**password(bắt buộc)**: mật khẩu  
+**fullname(bắt buộc)**: tên đầy đủ, bao gồm cả họ  
+**organizationName**: tên tổ chức  
+**gender**: giới tính, ['male', 'female']  
+**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
+**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
+**address(bắt buộc)**: địa chỉ  
+**phone(bắt buộc)**: số điện thoại  
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
@@ -68,6 +68,14 @@ Cập nhật thông tin khách hàng
    "phone": "Điện thoại 1",
 }
 ```
+**id(bắt buộc)**: id khách hàng   
+**fullname(bắt buộc)**: tên đầy đủ, bao gồm cả họ  
+**organizationName**: tên tổ chức  
+**gender**: giới tính, ['male', 'female']  
+**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
+**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
+**address(bắt buộc)**: địa chỉ  
+**phone(bắt buộc)**: số điện thoại  
 
 
 ## [Quên mật khẩu](#forgotpassword)
@@ -80,6 +88,7 @@ Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin 
    "email": "customer@example.vn"
 }
 ```
+**email(bắt buộc)**: email khách hàng   
 
 ## [Cập nhật mật khẩu](#changepassword)
 Cập nhật mật khẩu đăng nhập của khách hàng
@@ -93,7 +102,9 @@ Cập nhật mật khẩu đăng nhập của khách hàng
    "passwordForgotToken": "token"//
 }
 ```
-[passwordForgotToken](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)
+**id(bắt buộc)**: id khách hàng   
+**password(bắt buộc)**: id khách hàng   
+**passwordForgotToken(bắt buộc)**: [token quên mật khẩu](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)   
 
 ## [Lấy thông tin](#get)
 Lấy thông tin khách hàng qua id
@@ -105,6 +116,7 @@ Lấy thông tin khách hàng qua id
    "id": 0
 }
 ```
+**id(bắt buộc)**: id khách hàng   
 
 Lấy thông tin khách hàng qua email
 > **API:** /api/rms/v1/customer/detail  
@@ -115,3 +127,4 @@ Lấy thông tin khách hàng qua email
    "email": "customer@example.vn"
 }
 ```
+**email(bắt buộc)**: email khách hàng   
