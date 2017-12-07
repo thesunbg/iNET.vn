@@ -14,7 +14,7 @@ Tìm kiếm khách hàng của đại lý
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
-> **API:** /api/rms/v1/customer/create
+> **API:** /api/rms/v1/customer/create  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -33,7 +33,7 @@ Tạo một khách hàng mới
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
-> **API:** /api/rms/v1/customer/update
+> **API:** /api/rms/v1/customer/update  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -49,9 +49,34 @@ Cập nhật thông tin khách hàng
 }
 ```
 
+
+## [Quên mật khẩu](#forgotpassword)
+Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin nhập vào là email
+> **API:** /api/rms/v1/customer/forgotpassword  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "email": "customer@example.vn"
+}
+```
+
+## [Cập nhật mật khẩu](#changepassword)
+Cập nhật mật khẩu đăng nhập của khách hàng
+> **API:** /api/rms/v1/customer/changepassword  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "password": "newpassword",
+   "passwordForgotToken": "token"//[token quên mật khẩu](https://github.com/thesunbg/iNET.vn/edit/master/reseller_customer.md)
+}
+```
+
 ## [Lấy thông tin](#get)
 Lấy thông tin khách hàng qua id
-> **API:** /api/rms/v1/customer/detail
+> **API:** /api/rms/v1/customer/detail  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -61,7 +86,7 @@ Lấy thông tin khách hàng qua id
 ```
 
 Lấy thông tin khách hàng qua email
-> **API:** /api/rms/v1/customer/detail
+> **API:** /api/rms/v1/customer/detail  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
