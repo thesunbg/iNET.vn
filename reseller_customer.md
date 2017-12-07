@@ -15,13 +15,13 @@ Tìm kiếm khách hàng của đại lý
    "toCreatedDate": "01/01/2017 00:00"
 }
 ```
-"email": email khách hàng  
-"fullname": tên đầy đủ của khách hàng, gồm cả họ tên  
-"phone": số điện thoại  
-"page": trang, mặc định 0  
-"pageSize": số lượng KH lấy về, mặc định 30  
-"fromCreatedDate": ngày tạo mới từ  
-"toCreatedDate": ngày tạo mới tới  
+email: email khách hàng  
+ullname: tên đầy đủ   
+phone: số điện thoại  
+page: trang, mặc định 0  
+pageSize: số lượng KH lấy về, mặc định 30  
+fromCreatedDate: ngày tạo mới từ  
+toCreatedDate: ngày tạo mới tới  
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
@@ -41,6 +41,15 @@ Tạo một khách hàng mới
    "phone": "Điện thoại 1",
 }
 ```
+email*: email khách hàng  
+password*: mật khẩu  
+fullname*: tên đầy đủ, bao gồm cả họ  
+organizationName: tên tổ chức  
+gender: giới tính, ['male', 'female']  
+country: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
+province: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
+address*: địa chỉ  
+phone*: số điện thoại  
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
