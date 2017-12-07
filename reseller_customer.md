@@ -138,3 +138,15 @@ Lấy thông tin khách hàng qua email
 }
 ```
 **email (bắt buộc)**: email khách hàng   
+
+## [Tạm ngưng](#forgotpassword)
+Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin nhập vào là email
+> **API:** /api/rms/v1/customer/forgotpassword  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "email": "customer@example.vn"
+}
+```
+**email (bắt buộc)**: email khách hàng   
