@@ -59,6 +59,17 @@ Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay 
 **idnName**: tên miền tiếng việt  
 **registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
 
+## [Chuyển mã puny code tên miền tiếng việt](#validateidnname)
+Chuyển mã puny code cho tên miền tiếng việt
+> **API:** /api/rms/v1/domain/validateidnname  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "idnName": "tênmiền.vn",
+}
+```
+**idnName**: tên miền tiếng việt  
 
 ## [Đăng ký mới](#create)
 Đăng ký tên miền
@@ -192,6 +203,30 @@ Cập nhật nameserver của tên miền
 **id (bắt buộc)**: id tên miền  
 **nsList (bắt buộc)**: nameserver mới  
 
+## [Cập nhật nameserver theo tên miền](#updatechilddns)
+Cập nhật nameserver theo tên miền(childdns) của tên miền
+> **API:** /api/rms/v1/domain/updatechilddns
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "hostList": [
+      {
+         "hostname": "ns3.inet.vn",
+         "ipv4": "192.168.1.1"
+      },
+      {
+         "hostname": "ns4.inet.vn",
+         "ipv4": "192.168.1.1"
+      }
+   ]
+}
+```
+**id (bắt buộc)**: id tên miền  
+**hostList (bắt buộc)**: nameserver mới  
+
+
 ## [Thông tin bản ghi tên miền](#getrecord)
 Lấy thông tin bản ghi của tên miền
 > **API:** /api/rms/v1/domain/getrecord  
@@ -231,7 +266,7 @@ Cập nhật thông tin bản ghi của tên miền
 **id (bắt buộc)**: id tên miền  
 **recordList (bắt buộc)**: bản ghi tên miền, action = "add": tạo bản ghi, action = "del": xóa bán ghi  
 
-## [Gửi lại email để xác nhận tên miền](#resendemailverification)
+## [Gửi lại email để xác nhận](#resendemailverification)
 Gửi lại email để xác nhận tên miền
 > **API:** /api/rms/v1/domain/resendemailverification  
 > **Phương thức:** POST  
@@ -242,3 +277,29 @@ Gửi lại email để xác nhận tên miền
 }
 ```
 **id (bắt buộc)**: id tên miền  
+
+## [Đổi mã auth code](#changeauthcode)
+Đổi lại mã auth code cho tên miền
+> **API:** /api/rms/v1/domain/changeauthcode  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
+## [Đổi mật khẩu đăng nhập](#changepassword)
+Đổi lại mật khẩu đăng nhập cho tên miền
+> **API:** /api/rms/v1/domain/changepassword  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "password": "newpassword"
+}
+```
+**id (bắt buộc)**: id tên miền  
+**password (bắt buộc)**: mật khẩu mới  
