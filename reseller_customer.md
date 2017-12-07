@@ -1,4 +1,5 @@
 # [Khách hàng](#customer)
+* [Danh sách](#search)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
