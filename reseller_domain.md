@@ -12,6 +12,7 @@ Tìm kiếm danh sách tên miền của đại lý
    "idnName": "querystring",
    "registrant": "querystring",
    "suffix": "querystring",
+   "registrar": "inet",
    "status": "querystring",
    "contract": true,
    "verifyStatus": "querystring",
@@ -30,7 +31,8 @@ Tìm kiếm danh sách tên miền của đại lý
 **idnName**: tên miền tiếng việt  
 **registrant**: tên chủ thể  
 **suffix**: đuôi tên miền  
-**status**: trạng thái tên miền['active', 'suspended', 'deleted']  
+**registrar**: nhà đăng ký [{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
+**status**: trạng thái tên miền[{'active': 'đang hoạt động', {'suspended': 'đang tạm ngưng'}, {'deleted': 'đã xóa'}]  
 **contract**: đã có bản khai? true/false  
 **verifyStatus**: tên miền đã được verify? true/false  
 **privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
@@ -41,7 +43,24 @@ Tìm kiếm danh sách tên miền của đại lý
 **fromExpireDate**: ngày hết hạn từ  
 **toExpireDate**: ngày hết hạn tới  
 
-## [Tạo mới](#create)
+## [Kiểm tra sự tồn tại](#checkavailable)
+Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay không
+> **API:** /api/rms/v1/domain/checkavailable  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "name": "xn--tnmin-hsa0954c.vn",
+   "idnName": "tênmiền.vn",
+   "registrar": "inet"
+}
+```
+**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName
+**idnName**: tên miền tiếng việt
+**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
+
+
+## [Đăng ký mới](#create)
 Tạo một khách hàng mới
 > **API:** /api/rms/v1/customer/create  
 > **Phương thức:** POST  
