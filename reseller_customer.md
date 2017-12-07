@@ -41,15 +41,15 @@ Tạo một khách hàng mới
    "phone": "Điện thoại 1",
 }
 ```
-**email(bắt buộc)**: email khách hàng  
-**password(bắt buộc)**: mật khẩu  
-**fullname(bắt buộc)**: tên đầy đủ, bao gồm cả họ  
+**email (bắt buộc)**: email khách hàng  
+**password (bắt buộc)**: mật khẩu  
+**fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
 **gender**: giới tính, ['male', 'female']  
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
-**address(bắt buộc)**: địa chỉ  
-**phone(bắt buộc)**: số điện thoại  
+**address (bắt buộc)**: địa chỉ  
+**phone (bắt buộc)**: số điện thoại  
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
