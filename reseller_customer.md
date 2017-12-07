@@ -36,8 +36,8 @@ Tạo một khách hàng mới
    "organizationName": "Company A",
    "gender": "male", 
    "birthday": "01/01/2017 00:00", 
-   "country": "VN", //Danh sách quốc gia tại đây
-   "province": "HNI", //Danh sách tỉnh thành tại đây
+   "country": "VN", 
+   "province": "HNI", 
    "address": "Địa chỉ 1",
    "phone": "Điện thoại 1",
 }
@@ -48,8 +48,8 @@ Tạo một khách hàng mới
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
-**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
+**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
+**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
 **phone (bắt buộc)**: số điện thoại  
 
@@ -76,8 +76,8 @@ Cập nhật thông tin khách hàng
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
-**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
+**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
+**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
 **phone (bắt buộc)**: số điện thoại  
 
