@@ -1,7 +1,7 @@
 # [Khách hàng](#customer)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
-> **API:** /rms/v1/customer/search  
+> **API:** /api/rms/v1/customer/search  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -14,7 +14,7 @@ Tìm kiếm khách hàng của đại lý
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
-> **API:** /rms/v1/customer/create
+> **API:** /api/rms/v1/customer/create
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -33,7 +33,7 @@ Tạo một khách hàng mới
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
-> **API:** /rms/v1/customer/update
+> **API:** /api/rms/v1/customer/update
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -51,7 +51,7 @@ Cập nhật thông tin khách hàng
 
 ## [Lấy thông tin](#get)
 Lấy thông tin khách hàng qua id
-> **API:** /rms/v1/customer/detail
+> **API:** /api/rms/v1/customer/detail
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -61,7 +61,7 @@ Lấy thông tin khách hàng qua id
 ```
 
 Lấy thông tin khách hàng qua email
-> **API:** /rms/v1/customer/detail
+> **API:** /api/rms/v1/customer/detail
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
