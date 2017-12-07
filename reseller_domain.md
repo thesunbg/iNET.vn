@@ -6,9 +6,23 @@ Tìm kiếm danh sách tên miền của đại lý
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "email": "querystring",
-   "fullname": "querystring",
-   "phone": "querystring"
+   "page": 0,
+   "pageSize": 10,
+   "name": "querystring",
+   "idnName": "querystring",
+   "registrant": "querystring",
+   "suffix": "querystring",
+   "registrar": "querystring",
+   "status": "querystring",
+   "contract": "querystring",
+   "verifyStatus": "querystring",
+   "privacyProtection": "querystring",
+   "fromIssueDate": "01/01/2017 00:00",
+   "toIssueDate": "01/01/2017 00:00",
+   "fromRenewDate": "01/01/2017 00:00",
+   "toRenewDate": "01/01/2017 00:00",
+   "fromExpireDate": "01/01/2017 00:00",
+   "toExpireDate": "01/01/2017 00:00",
 }
 ```
 
