@@ -304,20 +304,6 @@ Gửi lại email để xác nhận tên miền
 ```
 **id (bắt buộc)**: id tên miền  
 
-## [Đăng nhập bằng tên miền](#signin)
-Đăng nhập cho tên miền
-> **API:** /api/rms/v1/domain/signin  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "name": "domain@example.vn",
-   "password": "password"
-}
-```
-**name (bắt buộc)**: tên miền  
-**password (bắt buộc)**: mật khẩu  
-
 ## [Đổi mật khẩu đăng nhập](#changepassword)
 Đổi lại mật khẩu đăng nhập cho tên miền
 > **API:** /api/rms/v1/domain/changepassword  
