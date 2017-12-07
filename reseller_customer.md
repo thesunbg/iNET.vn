@@ -1,6 +1,10 @@
 # [Khách hàng](#customer)
-* [Danh sách](#danh-sach)
-* [Tạo mới](##tạo-mới)
+* [Danh sách](#danh-sách)
+* [Tạo mới](#tạo-mới)
+* [Cập nhật thông tin](#cập-nhật-thông-tin)
+* [Quên mật khẩu](#quên-mật-khẩu)
+* [Cập nhật mật khẩu](#cập-nhật-mật-khẩu)
+* [Chi tiết](#cập-nhật-mật-khẩu)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
@@ -112,7 +116,7 @@ Cập nhật mật khẩu đăng nhập của khách hàng
 **password (bắt buộc)**: id khách hàng   
 **passwordForgotToken (bắt buộc)**: [token quên mật khẩu](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)   
 
-## [Lấy thông tin](#get)
+## [Chi tiết](#get)
 Lấy thông tin khách hàng qua id
 > **API:** /api/rms/v1/customer/get
 > **Phương thức:** POST  
