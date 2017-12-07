@@ -1,6 +1,6 @@
 # [Khách hàng](#customer)
-* [Danh sách](#search)
-* [Tạo mới](#create)
+* [Danh sách](#danh-sach)
+* [Tạo mới](##tạo-mới)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
