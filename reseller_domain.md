@@ -12,9 +12,8 @@ Tìm kiếm danh sách tên miền của đại lý
    "idnName": "querystring",
    "registrant": "querystring",
    "suffix": "querystring",
-   "registrar": "querystring",
    "status": "querystring",
-   "contract": "querystring",
+   "contract": true,
    "verifyStatus": "querystring",
    "privacyProtection": "querystring",
    "fromIssueDate": "01/01/2017 00:00",
@@ -25,6 +24,22 @@ Tìm kiếm danh sách tên miền của đại lý
    "toExpireDate": "01/01/2017 00:00",
 }
 ```
+**page**: 0  
+**pageSize**: 30  
+**name**: tên miền  
+**idnName**: tên miền tiếng việt  
+**registrant**: tên chủ thể  
+**suffix**: đuôi tên miền  
+**status**: trạng thái tên miền['active', 'suspended', 'deleted']  
+**contract**: đã có bản khai? true/false  
+**verifyStatus**: tên miền đã được verify? true/false  
+**privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
+**fromIssueDate**: ngày đăng ký từ  
+**toIssueDate**: ngày đăng ký tới  
+**fromRenewDate**: ngày duy trì từ  
+**toRenewDate**: "ngày duy trì tới  
+**fromExpireDate**: ngày hết hạn từ  
+**toExpireDate**: ngày hết hạn tới  
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
@@ -37,9 +52,9 @@ Tạo một khách hàng mới
    "password": "password",
    "fullname": "Nguyễn Văn A",
    "organizationName": "Company A",
-   "gender": "male", //hoặc female: nữ
-   "country": "VN", //Danh sách quốc gia tại đây
-   "province": "HNI", //Danh sách tỉnh thành tại đây
+   "gender": "male", 
+   "country": "VN", 
+   "province": "HNI",
    "address": "Địa chỉ 1",
    "phone": "Điện thoại 1",
 }
