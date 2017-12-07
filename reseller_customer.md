@@ -8,7 +8,11 @@ Tìm kiếm khách hàng của đại lý
 {
    "email": "querystring",
    "fullname": "querystring",
-   "phone": "querystring"
+   "phone": "querystring",
+   "page": 0,
+   "pageSize": 10,
+   "fromCreatedDate": "01/01/2017 00:00",
+   "toCreatedDate": "01/01/2017 00:00"
 }
 ```
 
