@@ -34,7 +34,8 @@ Tạo một khách hàng mới
    "password": "password",
    "fullname": "Nguyễn Văn A",
    "organizationName": "Company A",
-   "gender": "male", //hoặc female: nữ
+   "gender": "male", 
+   "birthday": "01/01/2017 00:00", 
    "country": "VN", //Danh sách quốc gia tại đây
    "province": "HNI", //Danh sách tỉnh thành tại đây
    "address": "Địa chỉ 1",
@@ -45,7 +46,8 @@ Tạo một khách hàng mới
 **password (bắt buộc)**: mật khẩu  
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
-**gender**: giới tính, ['male', 'female']  
+**gender**: giới tính ['male', 'female']  
+**birthday**: ngày sinh  
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
 **address (bắt buộc)**: địa chỉ  
@@ -61,7 +63,8 @@ Cập nhật thông tin khách hàng
    "id": 0,
    "fullname": "Nguyễn Văn A",
    "organizationName": "Company A",
-   "gender": "male", //hoặc female: nữ
+   "gender": "male", 
+   "birthday": "01/01/2017 00:00", 
    "country": "VN", //Danh sách quốc gia tại đây
    "province": "HNI", //Danh sách tỉnh thành tại đây
    "address": "Địa chỉ 1",
@@ -71,7 +74,8 @@ Cập nhật thông tin khách hàng
 **id (bắt buộc)**: id khách hàng   
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
-**gender**: giới tính, ['male', 'female']  
+**gender**: giới tính ['male', 'female']  
+**birthday**: ngày sinh  
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-quốc-gia)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#danh-sách-tỉnh-thành)  
 **address (bắt buộc)**: địa chỉ  
@@ -108,7 +112,7 @@ Cập nhật mật khẩu đăng nhập của khách hàng
 
 ## [Lấy thông tin](#get)
 Lấy thông tin khách hàng qua id
-> **API:** /api/rms/v1/customer/detail  
+> **API:** /api/rms/v1/customer/get
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -119,7 +123,7 @@ Lấy thông tin khách hàng qua id
 **id (bắt buộc)**: id khách hàng   
 
 Lấy thông tin khách hàng qua email
-> **API:** /api/rms/v1/customer/detail  
+> **API:** /api/rms/v1/customer/getbyemail  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
