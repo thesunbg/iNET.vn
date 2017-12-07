@@ -13,10 +13,10 @@ Tìm kiếm danh sách tên miền của đại lý
    "registrant": "querystring",
    "suffix": "querystring",
    "registrar": "inet",
-   "status": "querystring",
+   "status": "active",
    "contract": true,
-   "verifyStatus": "querystring",
-   "privacyProtection": "querystring",
+   "verifyStatus": true,
+   "privacyProtection": true,
    "fromIssueDate": "01/01/2017 00:00",
    "toIssueDate": "01/01/2017 00:00",
    "fromRenewDate": "01/01/2017 00:00",
@@ -31,10 +31,10 @@ Tìm kiếm danh sách tên miền của đại lý
 **idnName**: tên miền tiếng việt  
 **registrant**: tên chủ thể  
 **suffix**: đuôi tên miền  
-**registrar**: nhà đăng ký [{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
+**registrar**: nhà đăng ký [{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
 **status**: trạng thái tên miền[{'active': 'đang hoạt động', {'suspended': 'đang tạm ngưng'}, {'deleted': 'đã xóa'}]  
 **contract**: đã có bản khai? true/false  
-**verifyStatus**: tên miền đã được verify? true/false  
+**verifyStatus**: tên miền đã được xác nhận? true/false  
 **privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
 **fromIssueDate**: ngày đăng ký từ  
 **toIssueDate**: ngày đăng ký tới  
@@ -55,77 +55,101 @@ Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay 
    "registrar": "inet"
 }
 ```
-**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName
-**idnName**: tên miền tiếng việt
+**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
+**idnName**: tên miền tiếng việt  
 **registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
 
 
 ## [Đăng ký mới](#create)
-Tạo một khách hàng mới
-> **API:** /api/rms/v1/customer/create  
+Đăng ký tên miền
+> **API:** /api/rms/v1/domain/create  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "email": "customer1@examples.vn",
-   "password": "password",
-   "fullname": "Nguyễn Văn A",
-   "organizationName": "Company A",
-   "gender": "male", 
-   "country": "VN", 
-   "province": "HNI",
-   "address": "Địa chỉ 1",
-   "phone": "Điện thoại 1",
+   "name": "xn--tnmin-hsa0954c.vn",
+   "idnName": "tênmiền.vn",
+   "period": 1,
+   "customerId": 0,
+   "registrar": "inet", 
+   "nsList": [''], 
+   "contacts": [
+      {
+         "fullname": "Công ty A",
+         "organization": true,
+         "email": "company@example.vn",
+         "country": "VN",
+         "province": "HNI",
+         "address": "247 Cầu Giấy",
+         "phone": "0438385588",
+         "fax": "0438385588",
+         "type": "registrant",
+         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+      },
+      {
+         "fullname": "Nguyễn Văn A",
+         "organization": false,
+         "email": "a@example.vn",
+         "country": "VN",
+         "province": "HNI",
+         "address": "247 cau giay",
+         "phone": "0974019049",
+         "fax": "0974019049",
+         "type": "admin",
+         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+      },
+      {
+         "fullname": "Nguyễn Văn A",
+         "email": "a@example.vn",
+         "country": "VN",
+         "province": "HNI",
+         "address": "247 cau giay",
+         "phone": "0974019049",
+         "fax": "0974019049",
+         "type": "technique",
+         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+      },
+      {
+         "fullname": "Nguyễn Văn A",
+         "email": "a@example.vn",
+         "country": "VN",
+         "province": "HNI",
+         "address": "247 cau giay",
+         "phone": "0974019049",
+         "fax": "0974019049",
+         "type": "billing",
+         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+      }
+   ]
 }
 ```
+**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
+**idnName**: tên miền tiếng việt  
+**period (bắt buộc)**: số năm đăng ký, <= 10 năm  
+**customerId (bắt buộc)**: id của khách hàng  
+**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
+**nsList (bắt buộc)**: danh sách nameserver  
+**contacts (bắt buộc)**: danh sách contact của tên miền    
 
-## [Cập nhật thông tin](#update)
-Cập nhật thông tin khách hàng
-> **API:** /api/rms/v1/customer/update  
+## [Duy trì](#renew)
+Duy trì tên miền
+> **API:** /api/rms/v1/domain/renew  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
    "id": 0,
-   "fullname": "Nguyễn Văn A",
-   "organizationName": "Company A",
-   "gender": "male", //hoặc female: nữ
-   "country": "VN", //Danh sách quốc gia tại đây
-   "province": "HNI", //Danh sách tỉnh thành tại đây
-   "address": "Địa chỉ 1",
-   "phone": "Điện thoại 1",
+   "period": 1,
+   "expireDate": "01/01/2017 00:00"
 }
 ```
+**id (bắt buộc)**: id tên miền  
+**period (bắt buộc)**: số năm đăng ký, <= 10 năm  
+**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền  
 
-
-## [Quên mật khẩu](#forgotpassword)
-Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin nhập vào là email
-> **API:** /api/rms/v1/customer/forgotpassword  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "email": "customer@example.vn"
-}
-```
-
-## [Cập nhật mật khẩu](#changepassword)
-Cập nhật mật khẩu đăng nhập của khách hàng
-> **API:** /api/rms/v1/customer/changepassword  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "id": 0,
-   "password": "newpassword",
-   "passwordForgotToken": "token"//
-}
-```
-[passwordForgotToken](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)
-
-## [Lấy thông tin](#get)
-Lấy thông tin khách hàng qua id
-> **API:** /api/rms/v1/customer/detail  
+## [Ẩn thông tin tên miền](#privacyprotection)
+Ẩn thông tin tên miền trên whois
+> **API:** /api/rms/v1/domain/privacyprotection  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -133,13 +157,88 @@ Lấy thông tin khách hàng qua id
    "id": 0
 }
 ```
+**id (bắt buộc)**: id tên miền  
 
-Lấy thông tin khách hàng qua email
-> **API:** /api/rms/v1/customer/detail  
+## [Thông tin tên miền](#detail)
+Lấy thông tin chi tiết của tên miền
+> **API:** /api/rms/v1/domain/detail  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "email": "customer@example.vn"
+   "id": 0
 }
 ```
+**id (bắt buộc)**: id tên miền  
+
+## [Cập nhật nameserver](#updatedns)
+Cập nhật nameserver của tên miền
+> **API:** /api/rms/v1/domain/updatedns
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "nsList": [
+      {
+         "hostname": "ns3.inet.vn"
+      },
+      {
+         "hostname": "ns4.inet.vn"
+      }
+   ]
+}
+```
+**id (bắt buộc)**: id tên miền  
+**nsList (bắt buộc)**: nameserver mới  
+
+## [Thông tin bản ghi tên miền](#getrecord)
+Lấy thông tin bản ghi của tên miền
+> **API:** /api/rms/v1/domain/getrecord  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
+## [Cập nhật bản ghi tên miền](#updaterecord)
+Cập nhật thông tin bản ghi của tên miền
+> **API:** /api/rms/v1/domain/getrecord  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "recordList": [
+      {
+         "type": "A",
+         "name": "@",
+         "data": "192.168.1.1",
+         "action": "add"
+      },
+      {
+         "type": "A",
+         "name": "www",
+         "data": "192.168.1.1",
+         "action": "del"
+      }
+   ]
+}
+```
+**id (bắt buộc)**: id tên miền  
+**recordList (bắt buộc)**: bản ghi tên miền, action = "add": tạo bản ghi, action = "del": xóa bán ghi  
+
+## [Gửi lại email để xác nhận tên miền](#resendemailverification)
+Gửi lại email để xác nhận tên miền
+> **API:** /api/rms/v1/domain/resendemailverification  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
