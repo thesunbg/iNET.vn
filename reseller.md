@@ -1,4 +1,4 @@
-* [Authentication](https://github.com/thesunbg/iNET.vn/blob/master/reseller_authentication.md)
+* [Sinh mã token](https://github.com/thesunbg/iNET.vn/blob/master/reseller_authentication.md)
 * [Danh mục chung](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md)
 * [Khách hàng](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md)
 * [Tên miền](https://github.com/thesunbg/iNET.vn/blob/master/reseller_domain.md)
