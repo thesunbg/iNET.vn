@@ -5,6 +5,8 @@
 * [Quên mật khẩu](#quên-mật-khẩu)
 * [Cập nhật mật khẩu](#cập-nhật-mật-khẩu)
 * [Chi tiết](#cập-nhật-mật-khẩu)
+* [Tạm ngưng](#tạm-ngưng)
+* [Kích hoạt](#kích-hoạt)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
@@ -139,14 +141,26 @@ Lấy thông tin khách hàng qua email
 ```
 **email (bắt buộc)**: email khách hàng   
 
-## [Tạm ngưng](#forgotpassword)
-Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin nhập vào là email
-> **API:** /api/rms/v1/customer/forgotpassword  
+## [Tạm ngưng](#suspend)
+Tạm ngưng tài khoản khách hàng
+> **API:** /api/rms/v1/customer/suspend  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "email": "customer@example.vn"
+   "id": 0
 }
 ```
-**email (bắt buộc)**: email khách hàng   
+**id (bắt buộc)**: id khách hàng  
+
+## [Kích hoạt](#active)
+Kích hoạt lại tài khoản khách hàng
+> **API:** /api/rms/v1/customer/active  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id khách hàng  
