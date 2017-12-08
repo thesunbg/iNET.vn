@@ -69,8 +69,8 @@ Tạo mới contact
 **taxCode (nếu contact là tổ chức)**: mã số thuế  
 
 ## [Chi tiết](#detail)
-Khóa tên miền lại
-> **API:** /api/rms/v1/contact/Get  
+Chi tiết contact
+> **API:** /api/rms/v1/contact/get  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
