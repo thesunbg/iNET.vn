@@ -1,5 +1,5 @@
 # [Public API](#public-api)
-* [Whois](#Whois)
+* [Whois](#whois)
 * [Kiểm tra bản ghi](#kiểm-tra-bản-ghi)
 ## [Whois](#whois)
 Whois tên miền bất kỳ
