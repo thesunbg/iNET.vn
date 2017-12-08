@@ -60,13 +60,13 @@ Tạo mới contact
 **phone (bắt buộc)**: số điện thoại  
 **fax**: fax  
 **address (bắt buộc)**: địa chỉ  
-**country (bắt buộc)**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country) 
-**province (bắt buộc)**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province) 
+**country (bắt buộc)**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
+**province (bắt buộc)**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **dataExtend (bắt buộc)**: thông tin thêm contact  
-**gender (nếu contact là cá nhân)**: giới tính ['male', 'female'] 
-**idNumber (nếu contact là cá nhân)**: số chứng minh thư
-**birthday (nếu contact là cá nhân)**: ngày sinh, định dạng DD/MM/YYYY
-**taxCode (nếu contact là tổ chức)**: mã số thuế
+**gender (nếu contact là cá nhân)**: giới tính ['male', 'female']  
+**idNumber (nếu contact là cá nhân)**: số chứng minh thư  
+**birthday (nếu contact là cá nhân)**: ngày sinh, định dạng DD/MM/YYYY  
+**taxCode (nếu contact là tổ chức)**: mã số thuế  
 
 ## [Chi tiết](#detail)
 Khóa tên miền lại
