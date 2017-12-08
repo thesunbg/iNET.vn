@@ -3,7 +3,7 @@
 * [Kiểm tra bản ghi](#kiểm-tra-bản-ghi)
 ## [Whois](#whois)
 Whois tên miền bất kỳ
-> **API:** /api/public/whois/v1/whois/directly  
+> **API:** /api/public/whois/v1/whois/directly 
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
