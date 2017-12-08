@@ -1,12 +1,11 @@
 # [Chuyển đổi nhà đăng ký](#domaintransfer)
 * [Danh sách](#danh-sách)
-* [Tạo mới](#tạo-mới)
-* [Cập nhật thông tin](#cập-nhật-thông-tin)
-* [Quên mật khẩu](#quên-mật-khẩu)
-* [Cập nhật mật khẩu](#cập-nhật-mật-khẩu)
-* [Chi tiết](#cập-nhật-mật-khẩu)
-* [Tạm ngưng](#tạm-ngưng)
-* [Kích hoạt](#kích-hoạt)
+* [Mở khóa](#mở-khóa)
+* [Khóa](#khóa)
+* [Chấp nhận](#chấp-nhận)
+* [Từ chối](#từ-chối)
+* [Gửi yêu cầu](#gửi-yêu-cầu)
+* [Hủy bỏ yêu cầu](#hủy-bỏ-yêu-cầu)
 ## [Danh sách](#search)
 Tìm kiếm danh sách tên miền chuyển đổi nhà đăng ký
 > **API:** /api/rms/v1/domaintransfer/list  
