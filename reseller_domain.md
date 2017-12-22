@@ -5,6 +5,9 @@
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Duy trì](#duy-trì)
 * [Ẩn thông tin](#Ẩn-thông-tin-tên-miền)
+* [Ký DNSSEC](#Ký-dnssec)
+* [Đồng bộ DNSSEC](#Đồng-bộ-dnssec)
+* [Bỏ ký DNSSEC](#Bỏ-ký-dnssec)
 * [Chi tiết thông tin tên miền](#thông-tin-tên-miền)
 * [Cập nhật nameserver](#cập-nhật-nameserver)
 * [Cập nhật nameserver theo tên miền(childdns)](#cập-nhật-nameserver-theo-tên-miền)
@@ -189,7 +192,7 @@ Duy trì tên miền
 
 ## [Ký DNSSEC](#enablednssec)
 Chỉ áp dụng cho tên miền sử dụng DNS của iNET  
-Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ DNSSEC để đẩy lên VNNIC(kiểm tra bản ghi DS của tên miền qua hàm Getdnssecbydomainid)
+Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ DNSSEC để đẩy lên EPP server(kiểm tra bản ghi DS của tên miền qua hàm getdnssecbydomainid)
 > **API:** /api/rms/v1/domain/enablednssec  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
@@ -202,7 +205,7 @@ Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ D
 
 ## [Đồng bộ DNSSEC](#syncdnssec)
 Chỉ áp dụng cho tên miền sử dụng DNS của iNET  
-Đồng bộ bản ghi DNSSEC lên VNNIC  
+Đồng bộ bản ghi DNSSEC lên EPP server  
 > **API:** /api/rms/v1/domain/syncdnssec  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
@@ -214,8 +217,64 @@ Chỉ áp dụng cho tên miền sử dụng DNS của iNET
 **id (bắt buộc)**: id tên miền  
 
 ## [Bỏ ký DNSSEC](#disablednssec) 
+Chỉ áp dụng cho tên miền sử dụng DNS của iNET  
 Bỏ ký DNSSEC cho tên miền
 > **API:** /api/rms/v1/domain/disablednssec  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
+## [Ký DNSSEC thủ công](#creatednssecmanual)
+Ap dụng cho tên miền không sử dụng DNS của iNET  
+Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ DNSSEC để đẩy lên EPP server(kiểm tra bản ghi DS của tên miền qua hàm getdnssecbydomainid)
+> **API:** /api/rms/v1/domain/creatednssecmanual  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "keyTag": "keyTag",
+   "alg": "alg",
+   "digest": "digest",
+   "digestType": "digestType",
+   "domainId": "domainId",
+}
+```
+**domainId (bắt buộc)**: id tên miền  
+**keyTag (bắt buộc)**: keyTag  
+**alg (bắt buộc)**: alg  
+**digest (bắt buộc)**: digest  
+**digestType (bắt buộc)**: digestType
+
+## [Cập nhật khóa bản ghi DNSSEC trước khi đồng bộ](#updatednssecmanual)
+Ap dụng cho tên miền không sử dụng DNS của iNET  
+Cập nhật các thông tin khóa bản ghi của tên miền
+> **API:** /api/rms/v1/domain/updatednssecmanual  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "keyTag": "keyTag",
+   "alg": "alg",
+   "digest": "digest",
+   "digestType": "digestType",
+   "domainId": "domainId",
+}
+```
+**domainId (bắt buộc)**: id tên miền  
+**keyTag (bắt buộc)**: keyTag  
+**alg (bắt buộc)**: alg  
+**digest (bắt buộc)**: digest  
+**digestType (bắt buộc)**: digestType
+
+## [Xóa ký DNSSEC thủ công](#deletednssecmanual)
+Ap dụng cho tên miền không sử dụng DNS của iNET  
+Xóa không ký DNSSEC cho tên miền
+> **API:** /api/rms/v1/domain/deletednssecmanual  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
