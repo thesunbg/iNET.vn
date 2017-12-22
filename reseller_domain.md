@@ -187,6 +187,44 @@ Duy trì tên miền
 ```
 **id (bắt buộc)**: id tên miền  
 
+## [Ký DNSSEC](#enablednssec)
+Chỉ áp dụng cho tên miền sử dụng DNS của iNET  
+Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ DNSSEC để đẩy lên VNNIC(kiểm tra bản ghi DS của tên miền qua hàm Getdnssecbydomainid)
+> **API:** /api/rms/v1/domain/enablednssec  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
+## [Đồng bộ DNSSEC](#syncdnssec)
+Chỉ áp dụng cho tên miền sử dụng DNS của iNET  
+Đồng bộ bản ghi DNSSEC lên VNNIC  
+> **API:** /api/rms/v1/domain/syncdnssec  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
+## [Bỏ ký DNSSEC](#disablednssec) 
+Bỏ ký DNSSEC cho tên miền
+> **API:** /api/rms/v1/domain/disablednssec  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id tên miền  
+
 ## [Thông tin tên miền](#detail)
 Lấy thông tin chi tiết của tên miền
 > **API:** /api/rms/v1/domain/detail  
