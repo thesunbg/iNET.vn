@@ -19,8 +19,8 @@ Tìm kiếm khách hàng của đại lý
    "phone": "querystring",
    "page": 0,
    "pageSize": 30,
-   "fromCreatedDate": "01/01/2017 00:00",
-   "toCreatedDate": "01/01/2017 00:00"
+   "fromCreatedDate": "2018-01-20 00:00",
+   "toCreatedDate": "2018-01-20 00:00"
 }
 ```
 **email**: email khách hàng  
@@ -28,8 +28,8 @@ Tìm kiếm khách hàng của đại lý
 **phone**: số điện thoại  
 **page**: trang, mặc định 0  
 **pageSize**: số lượng KH lấy về, mặc định 30  
-**fromCreatedDate**: ngày tạo mới từ  
-**toCreatedDate**: ngày tạo mới tới  
+**fromCreatedDate**: ngày tạo mới từ  (YYYY-MM-DD HH:MI)
+**toCreatedDate**: ngày tạo mới tới (YYYY-MM-DD HH:MI)
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
@@ -43,7 +43,7 @@ Tạo một khách hàng mới
    "fullname": "Nguyễn Văn A",
    "organizationName": "Company A",
    "gender": "male", 
-   "birthday": "01/01/2017 00:00", 
+   "birthday": "2018-01-20 00:00",
    "country": "VN", 
    "province": "HNI", 
    "address": "Địa chỉ 1",
@@ -55,7 +55,7 @@ Tạo một khách hàng mới
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh  
+**birthday**: ngày sinh (YYYY-MM-DD HH:MI)
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
@@ -72,7 +72,7 @@ Cập nhật thông tin khách hàng
    "fullname": "Nguyễn Văn A",
    "organizationName": "Company A",
    "gender": "male", 
-   "birthday": "01/01/2017 00:00", 
+   "birthday": "2018-01-20 00:00",
    "country": "VN", //Danh sách quốc gia tại đây
    "province": "HNI", //Danh sách tỉnh thành tại đây
    "address": "Địa chỉ 1",
@@ -83,7 +83,7 @@ Cập nhật thông tin khách hàng
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh  
+**birthday**: ngày sinh  (YYYY-MM-DD HH:MI)
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
