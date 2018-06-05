@@ -4,9 +4,11 @@
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
+* [Nâng cấp gói](#Nâng-cấp-gói)
 * [Đổi tên miền chính](#Đổi-tên-miền-chính)
 * [Đăng nhập](#Đăng-nhập)
 * [Đổi mật khẩu](#Đổi-mật-khẩu)
+* [Danh sách gói cước](#Danh-sách-gói-cước)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách hosting của đại lý
@@ -114,6 +116,20 @@ Duy trì gói hosting
 **period (bắt buộc)**: số tháng duy trì  
 **expireDate (bắt buộc)**: ngày hết hạn hiện tại của gói hosting (YYYY-MM-DD HH:MI)  
 
+## [Nâng cấp gói](#change-plan)
+Nâng cấp gói hosting mới
+> **API:** /api/rms/v1/hosting/changeplan  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "planId": 12
+}
+```
+**id (bắt buộc)**: id gói hosting   
+**planId (bắt buộc)**: id của gói cước(ch [Danh sách gói cước](#Danh-sách-gói-cước))
+
 ## [Đổi tên miền chính](#change-domain-name)
 Đổi tên miền chính
 > **API:** /api/rms/v1/hosting/changedomainname  
@@ -151,5 +167,21 @@ Get link đăng nhập gói hosting
    "password": "newpassword"
 }
 ```
-**id (bắt buộc)**: id g  
+**id (bắt buộc)**: id gói cước  
 **password (bắt buộc)**: mật khẩu mới  
+
+## [Danh sách gói cước](#plan-list)
+Danh sách gói cước trên hệ thống
+> **API:** /api/rms/v1/plan/list  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "serviceType": "hosting",
+   "name": "name",
+   "type": "type"
+}
+```
+**serviceType**: dịch vụ ['hosting', 'email', 'vps']  
+**name**: tên gói cước  
+**type**: l  
