@@ -14,7 +14,7 @@
 * [Tạo mới nhóm email](#tạo-mới-nhóm-email)
 * [Cập nhật nhóm email](#cập-nhật-nhóm-email)
 * [Xóa nhóm email](#xóa-nhóm-email)
-* [Đồng bộ tài khoản email](#đồng-bộ-tài-khoản-email)
+* [Đồng bộ tài khoản email](#ồng-bộ-tài-khoản-email)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 
 ## [Danh sách](#search)
