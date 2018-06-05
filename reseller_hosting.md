@@ -6,7 +6,7 @@
 * [Duy trì](#duy-trì)
 * [Đổi tên miền chính](#Đổi-tên-miền-chính)
 * [Đăng nhập](#Đăng-nhập)
-* [Đổi mật khẩu](#Đổi mật khẩu)
+* [Đổi mật khẩu](#Đổi-mật-khẩu)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách hosting của đại lý
