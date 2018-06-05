@@ -5,8 +5,15 @@
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
 * [Nâng cấp gói](#nâng-cấp-gói)
-* [Đăng nhập](#Đăng-nhập)
-* [Đổi mật khẩu](#Đổi-mật-khẩu)
+* [Gen DKIM](#gen-dkim)
+* [Lấy thông tin bản ghi](#lấy-thông-tin-bản-ghi)
+* [Tạo mới tài khoản email](#tạo-mới-tài-khoản-email)
+* [Cập nhật tài khoản email](#cập-nhật-tài-khoản-email)
+* [Xóa tài khoản email](#xóa-tài-khoản-email)
+* [Tạo mới nhóm email](#tạo-mới-nhóm-email)
+* [Cập nhật nhóm email](#cập-nhật-nhóm-email)
+* [Xóa nhóm email](#xóa-nhóm-email)
+* [Đồng bộ tài khoản email](#đồng-bộ-tài-khoản-email)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 
 ## [Danh sách](#search)
@@ -47,7 +54,7 @@ Tìm kiếm danh sách email của đại lý
 
 ## [Chi tiết](#detail)
 Chi tiết gói email
-> **API:** /api/rms/v1/email/detail  
+> **API:** /api/rms/v1/email/gettotalquota  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -127,23 +134,9 @@ Nâng cấp gói email mới
 **id (bắt buộc)**: id gói email   
 **planId (bắt buộc)**: id của gói cước(chi tiết tại [Danh sách gói cước](#danh-sách-gói-cước))
 
-## [Đổi tên miền chính](#change-domain-name)
-Đổi tên miền chính
-> **API:** /api/rms/v1/hosting/changedomainname  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "id": 0,
-   "domainName": "domain.com"
-}
-```
-**id (bắt buộc)**: id hosting  
-**domainName (bắt buộc)**: tên miền mới  
-
-## [Đăng nhập](#signin)
-Get link đăng nhập gói hosting
-> **API:** /api/rms/v1/hosting/urlSignin  
+## [Gen DKIM](#gen-dkim)
+Gen ra DKIM cho gói email
+> **API:** /api/rms/v1/email/gendkim  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -151,21 +144,102 @@ Get link đăng nhập gói hosting
    "id": 0
 }
 ```
-**id (bắt buộc)**: id gói hosting  
+**id (bắt buộc)**: id gói email   
 
-## [Đổi mật khẩu](#change-password)
-Đổimật khẩu đăng nhập gói hosting
-> **API:** /api/rms/v1/hosting/changepassword  
+## [Lấy thông tin bản ghi](#getrecordverify)
+Lấy ra danh sách thông tin bản ghi chính xác để  trỏ tên miền cho gói email có thể gửi email không bị đánh dấu SPAM  
+> **API:** /api/rms/v1/email/getrecordverify  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói email   
+
+## [Tạo mới tài khoản email](#create-email-account)
+Tạo mới tài khoản email  
+> **API:** /api/rms/v1/emailaccount/create  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "emailId": 0,
+   "username": "",
+   "displayName": "",
+   "password": "",
+   "quota": 0,
+   "status": "",
+   "emailForward": "",
+   "description": "",
+}
+```
+**emailId (bắt buộc)**: id gói email   
+**username (bắt buộc)**: email của tài khoản   
+**displayName (bắt buộc)**: tên hiển thị của tài khoản  
+**password (bắt buộc)**: mật khẩu(bao gồm ký tự hoa, ký tự đặc biệt và ký tự số)   
+**quota (bắt buộc)**: Cấp dung lượng cho tài khoản(tính theo MB)   
+**status (bắt buộc)**: trạng thái ['active', 'suspended', 'locked']   
+**emailForward**: chuyển tiếp email, mỗi email chuyển tiếp cách nhau một dấu phẩy  
+**description**: mô tả thêm cho từng gói  
+
+## [Cập nhật tài khoản email](#update-email-account)
+Cập nhật tài khoản email  
+> **API:** /api/rms/v1/emailaccount/update  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
    "id": 0,
-   "password": "newpassword"
+   "emailId": 0,
+   "username": "",
+   "displayName": "",
+   "password": "",
+   "quota": 0,
+   "status": "",
+   "emailForward": "",
+   "description": "",
 }
 ```
-**id (bắt buộc)**: id gói cước  
-**password (bắt buộc)**: mật khẩu mới  
+**id (bắt buộc)**: id tài khoản email   
+**emailId (bắt buộc)**: id gói email   
+**username (bắt buộc)**: email của tài khoản   
+**displayName (bắt buộc)**: tên hiển thị của tài khoản  
+**password (bắt buộc)**: mật khẩu(bao gồm ký tự hoa, ký tự đặc biệt và ký tự số)   
+**quota (bắt buộc)**: Cấp dung lượng cho tài khoản(tính theo MB)   
+**status (bắt buộc)**: trạng thái ['active', 'suspended', 'locked']   
+**emailForward**: chuyển tiếp email, mỗi email chuyển tiếp cách nhau một dấu phẩy  
+**description**: mô tả thêm cho từng gói  
+
+## [Xóa tài khoản email](#delete-email-account)
+Xóa tài khoản email  
+> **API:** /api/rms/v1/emailaccount/delete  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "emailId": 0
+}
+```
+**id (bắt buộc)**: id tài khoản email   
+**emailId (bắt buộc)**: id gói email   
+
+## [Gen link dăng nhập tài khoản email](#gen-link-email-account)
+Gen link đăng nhập cho tài khoản email   
+> **API:** /api/rms/v1/emailaccount/createusersession  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "emailId": 0
+}
+```
+**id (bắt buộc)**: id tài khoản email   
+**emailId (bắt buộc)**: id gói email   
+
 
 ## [Danh sách gói cước](#plan-list)
 Danh sách gói cước trên hệ thống
