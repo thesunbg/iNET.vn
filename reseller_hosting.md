@@ -1,6 +1,6 @@
 # [Hosting](#hosting)
 * [Danh sách](#danh-sách)
-* [Chi tiết](#Chi-tiết)
+* [Chi tiết](#chi-tiết)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
