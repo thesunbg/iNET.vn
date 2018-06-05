@@ -46,6 +46,18 @@ Tìm kiếm danh sách hosting của đại lý
 **fromExpireDate**: ngày hết hạn từ  (YYYY-MM-DD HH:MI)  
 **toExpireDate**: ngày hết hạn tới  (YYYY-MM-DD HH:MI)  
 
+## [Chi tiết](#detail)
+Chi tiết gói hosting
+> **API:** /api/rms/v1/hosting/get  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói hosting   
+
 ## [Đăng ký mới](#create)
 Tạo mới gói hosting
 > **API:** /api/rms/v1/hosting/create  
@@ -139,5 +151,5 @@ Get link đăng nhập gói hosting
    "password": "newpassword"
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (bắt buộc)**: id g  
 **password (bắt buộc)**: mật khẩu mới  
