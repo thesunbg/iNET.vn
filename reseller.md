@@ -5,3 +5,6 @@
 * [Chuyển nhà đăng ký tên miền](https://github.com/thesunbg/iNET.vn/blob/master/reseller_domain_transfer.md)
 * [Contact](https://github.com/thesunbg/iNET.vn/blob/master/reseller_contact.md)
 * [Giao dịch](https://github.com/thesunbg/iNET.vn/blob/master/reseller_transaction.md)
+* [Hosting](https://github.com/thesunbg/iNET.vn/blob/master/reseller_hosting.md)
+* [Email](https://github.com/thesunbg/iNET.vn/blob/master/reseller_email.md)
+* [Cloud VPS](https://github.com/thesunbg/iNET.vn/blob/master/reseller_cloudvps.md)
