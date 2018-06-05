@@ -28,8 +28,8 @@ Tìm kiếm khách hàng của đại lý
 **phone**: số điện thoại  
 **page**: trang, mặc định 0  
 **pageSize**: số lượng KH lấy về, mặc định 30  
-**fromCreatedDate**: ngày tạo mới từ  (YYYY-MM-DD HH:MI)
-**toCreatedDate**: ngày tạo mới tới (YYYY-MM-DD HH:MI)
+**fromCreatedDate**: ngày tạo mới từ  (YYYY-MM-DD HH:MI)  
+**toCreatedDate**: ngày tạo mới tới (YYYY-MM-DD HH:MI)  
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
@@ -55,7 +55,7 @@ Tạo một khách hàng mới
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh (YYYY-MM-DD HH:MI)
+**birthday**: ngày sinh (YYYY-MM-DD HH:MI)  
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
@@ -83,7 +83,7 @@ Cập nhật thông tin khách hàng
 **fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh  (YYYY-MM-DD HH:MI)
+**birthday**: ngày sinh  (YYYY-MM-DD HH:MI)  
 **country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
