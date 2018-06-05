@@ -4,7 +4,7 @@
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
-* [Nâng cấp gói](#Nâng-cấp-gói)
+* [Nâng cấp gói](#nâng-cấp-gói)
 * [Đổi tên miền chính](#Đổi-tên-miền-chính)
 * [Đăng nhập](#Đăng-nhập)
 * [Đổi mật khẩu](#Đổi-mật-khẩu)
