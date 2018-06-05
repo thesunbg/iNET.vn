@@ -59,12 +59,12 @@ Tìm kiếm danh sách tên miền của đại lý
 **contract**: đã có bản khai? true/false  
 **verifyStatus**: tên miền đã được xác nhận? true/false  
 **privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
-**fromIssueDate**: ngày đăng ký từ  
-**toIssueDate**: ngày đăng ký tới  
-**fromRenewDate**: ngày duy trì từ  
-**toRenewDate**: "ngày duy trì tới  
-**fromExpireDate**: ngày hết hạn từ  
-**toExpireDate**: ngày hết hạn tới  
+**fromIssueDate**: ngày đăng ký từ  (YYYY-MM-DD HH:MI)  
+**toIssueDate**: ngày đăng ký tới  (YYYY-MM-DD HH:MI)  
+**fromRenewDate**: ngày duy trì từ  (YYYY-MM-DD HH:MI)  
+**toRenewDate**: "ngày duy trì tới  (YYYY-MM-DD HH:MI)  
+**fromExpireDate**: ngày hết hạn từ  (YYYY-MM-DD HH:MI)  
+**toExpireDate**: ngày hết hạn tới  (YYYY-MM-DD HH:MI)  
 
 ## [Kiểm tra sự tồn tại](#checkavailable)
 Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay không
@@ -179,7 +179,7 @@ Duy trì tên miền
 ```
 **id (bắt buộc)**: id tên miền  
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
-**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền  
+**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền  (YYYY-MM-DD HH:MI)  
 
 ## [Ẩn thông tin tên miền](#privacyprotection)
 Ẩn thông tin tên miền trên whois
@@ -436,8 +436,8 @@ Xem vết tác động của tên miền
 ```
 **domainId (bắt buộc)**: id tên miền  
 **actionName**: hành động[{'update-record': 'cập nhật bản ghi'}, {'update-status': 'cập nhật trạng thái'}, {'update-ns': 'cập nhật nameserver'}, {'change-password': 'đổi mật khẩu'}]  
-**fromCreatedDate**: ngày tác động từ  
-**toCreatedDate**: ngày tác động tới  
+**fromCreatedDate**: ngày tác động từ  (YYYY-MM-DD HH:MI)  
+**toCreatedDate**: ngày tác động tới  (YYYY-MM-DD HH:MI)  
 
 ## [Chuyển đại lý](#changeorganization)
 Chuyển tên miền sang đại lý mới
