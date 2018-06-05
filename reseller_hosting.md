@@ -40,7 +40,7 @@ Tìm kiếm danh sách hosting của đại lý
 **status**: trạng thái  
 **serverName**: url server của gói hosting  
 **planName**: gói cước  
-**type**: loại hosting
+**type**: loại hosting  
 **fromIssueDate**: ngày đăng ký từ  (YYYY-MM-DD HH:MI)  
 **toIssueDate**: ngày đăng ký tới  (YYYY-MM-DD HH:MI)  
 **fromRenewDate**: ngày duy trì từ  (YYYY-MM-DD HH:MI)  
