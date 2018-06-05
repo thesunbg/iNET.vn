@@ -8,7 +8,7 @@
 * [Đổi tên miền chính](#Đổi-tên-miền-chính)
 * [Đăng nhập](#Đăng-nhập)
 * [Đổi mật khẩu](#Đổi-mật-khẩu)
-* [Danh sách gói cước](#Danh-sách-gói-cước)
+* [Danh sách gói cước](#danh-sách-gói-cước)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách hosting của đại lý
@@ -128,7 +128,7 @@ Nâng cấp gói hosting mới
 }
 ```
 **id (bắt buộc)**: id gói hosting   
-**planId (bắt buộc)**: id của gói cước(ch [Danh sách gói cước](#Danh-sách-gói-cước))
+**planId (bắt buộc)**: id của gói cước(chi tiết tại [Danh sách gói cước](#danh-sách-gói-cước))
 
 ## [Đổi tên miền chính](#change-domain-name)
 Đổi tên miền chính
