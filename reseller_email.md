@@ -81,7 +81,7 @@ Tạo mới gói email
 ```
 **domainName (bắt buộc)**: tên miền email  
 **type**: loại hosting ['email-new']  
-**customerId (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
@@ -101,7 +101,7 @@ Tạo mới gói email
 ```
 **domainName (bắt buộc)**: tên miền gói email  
 **type**: loại hosting ['email-new']  
-**customerId (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
