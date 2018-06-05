@@ -10,6 +10,7 @@
 * [Tạo mới tài khoản email](#tạo-mới-tài-khoản-email)
 * [Cập nhật tài khoản email](#cập-nhật-tài-khoản-email)
 * [Xóa tài khoản email](#xóa-tài-khoản-email)
+* [Gen link đăng nhập tài khoản email](#gen-link-đăng-nhập-email)
 * [Tạo mới nhóm email](#tạo-mới-nhóm-email)
 * [Cập nhật nhóm email](#cập-nhật-nhóm-email)
 * [Xóa nhóm email](#xóa-nhóm-email)
@@ -239,6 +240,78 @@ Gen link đăng nhập cho tài khoản email
 ```
 **id (bắt buộc)**: id tài khoản email   
 **emailId (bắt buộc)**: id gói email   
+
+## [Tạo mới nhóm email](#create-group-email)
+Tạo mới nhóm email   
+> **API:** /api/rms/v1/email/createdistribution  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "emailId": 0,
+   "name": "",
+   "displayName": 0,
+   "description": 0,
+   "status": 0,
+   "emailMemberList": [{username: 'test'}, {username: 'test2'}]
+}
+```
+**emailId (bắt buộc)**: id gói email   
+**name (bắt buộc)**: tên nhóm   
+**displayName (bắt buộc)**: Tên hiển thị   
+**description**: mô tả   
+**status (bắt buộc)**: trạng thái   
+**emailMemberList (bắt buộc)**: Danh sách tài khoản email  
+
+## [Cập nhật nhóm email](#update-group-email)
+Cập nhật nhóm email   
+> **API:** /api/rms/v1/email/updatedistribution  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "emailId": 0,
+   "name": "",
+   "displayName": 0,
+   "description": 0,
+   "status": 0,
+   "emailMemberList": [{username: 'test'}, {username: 'test2'}]
+}
+```
+**id (bắt buộc)**: id nhóm email   
+**emailId (bắt buộc)**: id gói email   
+**name (bắt buộc)**: tên nhóm   
+**displayName (bắt buộc)**: Tên hiển thị   
+**description**: mô tả   
+**status (bắt buộc)**: trạng thái   
+**emailMemberList (bắt buộc)**: Danh sách tài khoản email  
+
+## [Xóa nhóm email](#delete-group-email)
+Xóa nhóm email   
+> **API:** /api/rms/v1/email/deletedistribution  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "emailId": 0
+}
+```
+**id (bắt buộc)**: id nhóm email   
+**emailId (bắt buộc)**: id gói email   
+
+## [Đồng bộ tài khoản email](#sync-email-account)
+Đồngbộ tài khoản email trên server
+> **API:** /api/rms/v1/email/syncemailaccount  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id nhóm email   
 
 
 ## [Danh sách gói cước](#plan-list)
