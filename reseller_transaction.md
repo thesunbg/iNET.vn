@@ -17,8 +17,8 @@ Tìm kiếm giao dịch của đại lý
    "serviceType": "domain",
    "customerEmail": "customer@example.vn",
    "resourceId": 0,
-   "fromCreatedDate": "01/01/2017 00:00",
-   "toCreatedDate": "01/01/2017 00:00"
+   "fromCreatedDate": "2018-01-01 00:00",
+   "toCreatedDate": "2018-01-01 00:00",
 }
 ```
 **page**: trang, mặc định 0  
@@ -32,8 +32,8 @@ Tìm kiếm giao dịch của đại lý
 **serviceType**: dịch vụ[{'domain': 'tên miền'}, {'hosting': 'hosting'}, {'email': 'email'}, {'vps': 'Cloud VPS'}]  
 **customerEmail**: email khách hàng  
 **resourceId**: id của dịch vụ(id của tên miền, hosting...)  
-**fromCreatedDate**: ngày tạo mới từ  
-**toCreatedDate**: ngày tạo mới tới  
+**fromCreatedDate**: ngày tạo mới từ  (YYYY-MM-DD HH:MI)  
+**toCreatedDate**: ngày tạo mới tới  (YYYY-MM-DD HH:MI)  
 
 ## [Chi tiết](#get)
 Lấy thông tin chi tiết của giao dịch
