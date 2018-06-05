@@ -1,45 +1,26 @@
-# [Tên miền](#domain)
+# [Hosting](#hosting)
 * [Danh sách](#danh-sách)
-* [Kiểm tra sự tồn tại](#kiểm-tra-sự-tồn-tại)
-* [Chuyển mã punycode cho tên miền tiếng việt](#chuyển-mã-puny-code-tên-miền-tiếng-việt)
+* [Chi tiết](#Chi-tiết)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Duy trì](#duy-trì)
-* [Ẩn thông tin](#Ẩn-thông-tin-tên-miền)
-* [Ký DNSSEC](#ký-dnssec)
-* [Đồng bộ DNSSEC](#đồng-bộ-dnssec)
-* [Bỏ ký DNSSEC](#bỏ-ký-dnssec)
-* [Ký DNSSEC thủ công](#ký-dnssec-thủ-công)
-* [Cập nhật khóa bản ghi DNSSEC trước khi đồng bộ](#ký-dnssec-thủ-công)
-* [Xóa ký DNSSEC thủ công](#xóa-ký-dnssec-thủ-công)
-* [Chi tiết thông tin tên miền](#thông-tin-tên-miền)
-* [Cập nhật nameserver](#cập-nhật-nameserver)
-* [Cập nhật nameserver theo tên miền(childdns)](#cập-nhật-nameserver-theo-tên-miền)
-* [Thông tin bản ghi](#thông-tin-bản-ghi-tên-miền)
-* [Cập nhật bản ghi](#cập-nhật-bản-ghi-tên-miền)
-* [Gửi lại email xác nhận](#gửi-lại-email-để-xác-nhận)
-* [Đổi mã auth code](#Đổi-mã-auth-code)
-* [Đổi mật khẩu đăng nhập](#Đổi-mật-khẩu-đăng-nhập)
-* [Xem vết](#xem-vết)
-* [Chuyển đại lý](#chuyển-đại-lý)
-* [Chuyển tài khoản quản trị](#chuyển-tài-khoản-quản-trị)
+* [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
+* [Đăng nhập](#Đăng-nhập)
+
 ## [Danh sách](#search)
-Tìm kiếm danh sách tên miền của đại lý
-> **API:** /api/rms/v1/domain/search  
+Tìm kiếm danh sách hosting của đại lý
+> **API:** /api/rms/v1/hosting/search  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
    "page": 0,
    "pageSize": 10,
-   "name": "querystring",
-   "idnName": "querystring",
-   "registrant": "querystring",
-   "suffix": "querystring",
-   "registrar": "inet",
-   "status": "active",
-   "contract": true,
-   "verifyStatus": true,
-   "privacyProtection": true,
+   "domainName": "querystring",
+   "customerId": 0,
+   "status": "querystring",
+   "serverName": "querystring",
+   "planName": "Gói A",
+   "type": "type",
    "fromIssueDate": "2018-01-01 00:00",
    "toIssueDate": "2018-01-01 00:00",
    "fromRenewDate": "2018-01-01 00:00",
@@ -48,17 +29,14 @@ Tìm kiếm danh sách tên miền của đại lý
    "toExpireDate": "2018-01-01 00:00",
 }
 ```
-**page**: 0  
-**pageSize**: 30  
-**name**: tên miền  
-**idnName**: tên miền tiếng việt  
-**registrant**: tên chủ thể  
-**suffix**: đuôi tên miền  
-**registrar**: nhà đăng ký [{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
-**status**: trạng thái tên miền[{'active': 'đang hoạt động', {'suspended': 'đang tạm ngưng'}, {'deleted': 'đã xóa'}]  
-**contract**: đã có bản khai? true/false  
-**verifyStatus**: tên miền đã được xác nhận? true/false  
-**privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
+**page**: trang  
+**pageSize**: bản ghi trên một trang  
+**domainName**: tên miền hosting  
+**customerId**: id của khách hàng  
+**status**: trạng thái  
+**serverName**: url server của gói hosting  
+**planName**: gói cước  
+**type**: loại hosting
 **fromIssueDate**: ngày đăng ký từ  (YYYY-MM-DD HH:MI)  
 **toIssueDate**: ngày đăng ký tới  (YYYY-MM-DD HH:MI)  
 **fromRenewDate**: ngày duy trì từ  (YYYY-MM-DD HH:MI)  
@@ -66,104 +44,25 @@ Tìm kiếm danh sách tên miền của đại lý
 **fromExpireDate**: ngày hết hạn từ  (YYYY-MM-DD HH:MI)  
 **toExpireDate**: ngày hết hạn tới  (YYYY-MM-DD HH:MI)  
 
-## [Kiểm tra sự tồn tại](#checkavailable)
-Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay không
-> **API:** /api/rms/v1/domain/checkavailable  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "name": "xn--tnmin-hsa0954c.vn",
-   "idnName": "tênmiền.vn",
-   "registrar": "inet"
-}
-```
-**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
-**idnName**: tên miền tiếng việt  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
-
-## [Chuyển mã puny code tên miền tiếng việt](#validateidnname)
-Chuyển mã puny code cho tên miền tiếng việt
-> **API:** /api/rms/v1/domain/validateidnname  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "idnName": "tênmiền.vn",
-}
-```
-**idnName**: tên miền tiếng việt  
-
 ## [Đăng ký mới](#create)
-Đăng ký tên miền
-> **API:** /api/rms/v1/domain/create  
+Tạo mới gói hosting
+> **API:** /api/rms/v1/hosting/create  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "name": "xn--tnmin-hsa0954c.vn",
-   "idnName": "tênmiền.vn",
-   "period": 1,
+   "domainName": "example.com",
+   "type": "linux-new",
+   "planName": "Gói A",   
    "customerId": 0,
-   "registrar": "inet", 
-   "nsList": [''], 
-   "contacts": [
-      {
-         "fullname": "Công ty A",
-         "organization": true,
-         "email": "company@example.vn",
-         "country": "VN",
-         "province": "HNI",
-         "address": "247 Cầu Giấy",
-         "phone": "0438385588",
-         "fax": "0438385588",
-         "type": "registrant",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
-      },
-      {
-         "fullname": "Nguyễn Văn A",
-         "organization": false,
-         "email": "a@example.vn",
-         "country": "VN",
-         "province": "HNI",
-         "address": "247 cau giay",
-         "phone": "0974019049",
-         "fax": "0974019049",
-         "type": "admin",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
-      },
-      {
-         "fullname": "Nguyễn Văn A",
-         "email": "a@example.vn",
-         "country": "VN",
-         "province": "HNI",
-         "address": "247 cau giay",
-         "phone": "0974019049",
-         "fax": "0974019049",
-         "type": "technique",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
-      },
-      {
-         "fullname": "Nguyễn Văn A",
-         "email": "a@example.vn",
-         "country": "VN",
-         "province": "HNI",
-         "address": "247 cau giay",
-         "phone": "0974019049",
-         "fax": "0974019049",
-         "type": "billing",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
-      }
-   ]
+   "period": 12,
 }
 ```
-**name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
-**idnName**: tên miền tiếng việt  
-**period (bắt buộc)**: số năm đăng ký, <= 10 năm  
+**domainName (bắt buộc)**: tên miền hosting  
+**type**: loại hosting ['linux-new','wordpress-new', 'seo-class-c', 'reseller']  
+**customerId (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
-**nsList (bắt buộc)**: danh sách nameserver  
-**contacts (bắt buộc)**: danh sách contact của tên miền    
 
 ## [Duy trì](#renew)
 Duy trì tên miền
