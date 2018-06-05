@@ -76,7 +76,7 @@ Tạo mới gói hosting
 ```
 **domainName (bắt buộc)**: tên miền hosting  
 **type**: loại hosting ['linux-new','wordpress-new', 'seo-class-c', 'reseller']  
-**customerId (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
@@ -96,7 +96,7 @@ Tạo mới gói hosting
 ```
 **domainName (bắt buộc)**: tên miền hosting  
 **type**: loại hosting ['linux-new','wordpress-new', 'seo-class-c', 'reseller']  
-**customerId (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
