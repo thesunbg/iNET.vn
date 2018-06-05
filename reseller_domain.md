@@ -40,12 +40,12 @@ Tìm kiếm danh sách tên miền của đại lý
    "contract": true,
    "verifyStatus": true,
    "privacyProtection": true,
-   "fromIssueDate": "01/01/2017 00:00",
-   "toIssueDate": "01/01/2017 00:00",
-   "fromRenewDate": "01/01/2017 00:00",
-   "toRenewDate": "01/01/2017 00:00",
-   "fromExpireDate": "01/01/2017 00:00",
-   "toExpireDate": "01/01/2017 00:00",
+   "fromIssueDate": "2018-01-01 00:00",
+   "toIssueDate": "2018-01-01 00:00",
+   "fromRenewDate": "2018-01-01 00:00",
+   "toRenewDate": "2018-01-01 00:00",
+   "fromExpireDate": "2018-01-01 00:00",
+   "toExpireDate": "2018-01-01 00:00",
 }
 ```
 **page**: 0  
@@ -174,7 +174,7 @@ Duy trì tên miền
 {
    "id": 0,
    "period": 1,
-   "expireDate": "01/01/2017 00:00"
+   "expireDate": "2018-01-01 00:00",
 }
 ```
 **id (bắt buộc)**: id tên miền  
@@ -430,8 +430,8 @@ Xem vết tác động của tên miền
 {
    "domainId": 0,
    "actionName": "change-dns",
-   "fromCreatedDate": "01/01/2017 00:00",
-   "toCreatedDate": "01/01/2017 00:00",
+   "fromCreatedDate": "2018-01-01 00:00",
+   "toCreatedDate": "2018-01-01 00:00",
 }
 ```
 **domainId (bắt buộc)**: id tên miền  
