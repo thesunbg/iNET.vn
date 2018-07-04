@@ -106,7 +106,7 @@ Chuyển mã puny code cho tên miền tiếng việt
    "period": 1,
    "customerId": 0,
    "registrar": "inet", 
-   "nsList": [''], 
+   "nsList": [{hostname: 'ns1.inet.vn'},{hostname: 'ns2.inet.vn}], 
    "contacts": [
       {
          "fullname": "Công ty A",
@@ -118,7 +118,7 @@ Chuyển mã puny code cho tên miền tiếng việt
          "phone": "0438385588",
          "fax": "0438385588",
          "type": "registrant",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+         "dataExtend": "{\"taxCode\":\"0123456789\"}"
       },
       {
          "fullname": "Nguyễn Văn A",
