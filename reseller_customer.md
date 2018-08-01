@@ -7,7 +7,7 @@
 * [Chi tiết](#cập-nhật-mật-khẩu)
 * [Tạm ngưng](#tạm-ngưng)
 * [Kích hoạt](#kích-hoạt)
-* [Lấy link truy cập](#l)
+* [Lấy link truy cập](#lấy-link-truy-cập)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
