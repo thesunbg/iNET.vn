@@ -7,6 +7,7 @@
 * [Chi tiết](#cập-nhật-mật-khẩu)
 * [Tạm ngưng](#tạm-ngưng)
 * [Kích hoạt](#kích-hoạt)
+* [Lấy link truy cập](#l)
 ## [Danh sách](#search)
 Tìm kiếm khách hàng của đại lý
 > **API:** /api/rms/v1/customer/search  
@@ -164,3 +165,15 @@ Kích hoạt lại tài khoản khách hàng
 }
 ```
 **id (bắt buộc)**: id khách hàng  
+
+## [Lấy link truy cập](#geturlsignin)
+Lấy link truy cập cho khách hàng
+> **API:** /api/rms/v1/customer/geturlsignin  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "email": "test@xxx.vn"
+}
+```
+**email (bắt buộc)**: email khách hàng  
