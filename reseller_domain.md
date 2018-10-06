@@ -372,6 +372,7 @@ Cập nhật thông tin bản ghi của tên miền
          "action": "add"
       },
       {
+         "id": "id record c",
          "type": "A",
          "name": "www",
          "data": "192.168.1.1",
