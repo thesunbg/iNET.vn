@@ -146,7 +146,7 @@ Nâng cấp gói hosting mới
 
 ## [Đăng nhập](#signin)
 Get link đăng nhập gói hosting
-> **API:** /api/rms/v1/hosting/urlSignin  
+> **API:** /api/rms/v1/hosting/urlsignin  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
