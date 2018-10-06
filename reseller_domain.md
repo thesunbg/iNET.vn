@@ -358,7 +358,7 @@ Lấy thông tin bản ghi của tên miền
 
 ## [Cập nhật bản ghi tên miền](#updaterecord)
 Cập nhật thông tin bản ghi của tên miền
-> **API:** /api/rms/v1/domain/getrecord  
+> **API:** /api/rms/v1/domain/updaterecord  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
