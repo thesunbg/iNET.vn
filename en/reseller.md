@@ -1,6 +1,6 @@
 * [Generate token](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_authentication.md)
 * [General categories](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_category.md)
-* [Clients](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_customer.md)
+* [C](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_customer.md)
 * [Domain name](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_domain.md)
 * [Change Registrar](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_domain_transfer.md)
 * [Contact](https://github.com/thesunbg/iNET.vn/blob/master/en/reseller_contact.md)
