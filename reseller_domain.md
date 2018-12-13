@@ -403,7 +403,8 @@ Gửi lại email để xác nhận tên miền
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "id": 0
+   "id": 0,
+   "name": "exampl"
 }
 ```
 **id (bắt buộc)**: id tên miền  
