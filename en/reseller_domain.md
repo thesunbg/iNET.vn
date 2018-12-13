@@ -302,7 +302,8 @@ Change auth code for domain
 > **Body should be a JSON object (JSON):**   
 ```
 {
-   "id": 0
+   "id": 0,
+   "name": "example.c"
 }
 ```
 **id (required)**: Domain ID
