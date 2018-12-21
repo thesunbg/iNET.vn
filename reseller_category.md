@@ -15,7 +15,7 @@ Danh sách các tỉnh thành của Việt Nam
 
 ## [Danh sách quốc gia](#country)
 Danh sách các quốc gia trên thế giới
-> **API:** /api/rms/v1/category/clist  
+> **API:** /api/rms/v1/category/countrylist   
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
