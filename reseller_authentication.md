@@ -1,5 +1,5 @@
 # [Sinh mã token](#Authentication)
-Các API cho đại lý yêu cầu có mã token để xác thực quyền
+Các API cho đại lý yêu cầu có mã token để xác thực quyền  
 Cách 1: Sử dụng API token hệ thống cung cấp.  
 Truy cập trang quản trị: https://dms.inet.vn/rms/account/organization/setting/api để lấy token của tài khoản 
 
