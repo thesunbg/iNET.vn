@@ -1,5 +1,17 @@
 # [Sinh mã token](#Authentication)
-Các API cho đại lý yêu cầu có mã token để xác thực quyền, sử dụng tài khoản và mật khẩu, địa chỉ IP đã đăng ký với iNET để tiến hành xác thực và lấy mã token.  
+Các API cho đại lý yêu cầu có mã token để xác thực quyền
+Cách 1: Sử dụng API token hệ thống cung cấp.  
+Truy cập trang quản trị: https://dms.inet.vn/rms/account/organization/setting/api để lấy token của tài khoản 
+
+> Sử dụng chuỗi token nhận được để set vào headers mỗi API gửi đi:  
+```
+{ headers: 
+   {
+       token: xxx
+   }
+}
+```
+Cách 2: sử dụng tài khoản và mật khẩu, địa chỉ IP đã đăng ký với iNET để tiến hành xác thực và lấy mã token.  
 
 > **Host:** dms.inet.vn  
 > **Cổng:** 443  
