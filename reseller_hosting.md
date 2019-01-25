@@ -178,10 +178,28 @@ Danh sách gói cước trên hệ thống
 ```
 {
    "serviceType": "hosting",
-   "name": "name",
-   "type": "type"
+   "status": "active"  //lọc những gói cước đang hoạt động
 }
 ```
 **serviceType**: dịch vụ ['hosting', 'email', 'vps']  
 **name**: tên gói cước  
 **type**: l  
+> **Dữ liệu trả về mẫu(JSON):**   
+```
+{
+   {
+            "id": 40,
+            "name": "Gói A", //tên gói
+            "type": "reseller", //loại gói: wordpress-new(web hosting), reseller(Reseller hosting), seo-class-c(SEO hosting)
+            "minReg": 1,  //thời gian đăng ký tối thiểu
+            "serviceType": "hosting", //dịch vụ
+            "codeMapping": "Reseller A", //Bỏ qua
+            "description": "", //bỏ qua
+            "promotionPrice": 195000, //bỏ qua
+            "promotionFrom": "01/14/2019 00:00", //bỏ qua
+            "promotionTo": "01/15/2019 00:00", //bỏ qua
+            "priceOrigin": 390000, //bỏ qua
+            "status": "active" //tr
+        },
+}
+```
