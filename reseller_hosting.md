@@ -9,6 +9,7 @@
 * [Đăng nhập](#Đăng-nhập)
 * [Đổi mật khẩu](#Đổi-mật-khẩu)
 * [Danh sách gói cước](#danh-sách-gói-cước)
+* [Lấy biểu phí gói cước](#lấy-biểu-phí-gói-cước)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách hosting của đại lý
@@ -199,5 +200,37 @@ Danh sách gói cước trên hệ thống
    "promotionTo": "01/15/2019 00:00", //bỏ qua
    "priceOrigin": 390000, //bỏ qua
    "status": "active" //trạng thái 
+}
+```
+
+## [Lấy biểu phí gói cước](#fee-plan)
+Danh sách gói cước trên hệ thống
+> **API:** /api/rms/v1/fee/getprice  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+ "serviceType": "hosting",  
+ "action": "register",  
+ "planName": "Gói A",  
+ "type": "wordpress-new", 
+ "period": 12 
+}
+```
+**serviceType**: dịch vụ ['hosting', 'email', 'vps']  
+**action**: hành động: register(đăng ký mới), renew(duy trì)  
+**planName**: Gói A, Gói B, Gói C  
+**type**: Trường type trong danh sách gói cước  
+**period**: Thời gian đăng ký(tháng)  
+> **Dữ liệu trả về mẫu(JSON):**   
+```
+{
+    "value": 452760,  // Số tiền phải trả
+    "valueOrigin": 646800,  //S
+    "serviceType": "hosting",
+    "action": "register",
+    "period": 12,
+    "planName": "Gói A",
+    "type": "wordpress-new"
 }
 ```
