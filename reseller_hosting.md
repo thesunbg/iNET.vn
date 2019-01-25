@@ -226,7 +226,7 @@ Danh sách gói cước trên hệ thống
 ```
 {
     "value": 452760,  // Số tiền phải trả
-    "valueOrigin": 646800,  //S
+    "valueOrigin": 646800,  //Tiền chưa chiết khấu
     "serviceType": "hosting",
     "action": "register",
     "period": 12,
