@@ -8,3 +8,4 @@
 * [Hosting](https://github.com/thesunbg/iNET.vn/blob/master/reseller_hosting.md)
 * [Email](https://github.com/thesunbg/iNET.vn/blob/master/reseller_email.md)
 * [Cloud VPS](https://github.com/thesunbg/iNET.vn/blob/master/reseller_cloudvps.md)
+* [Biểu phí đại lý](https://github.com/thesunbg/iNET.vn/blob/master/reseller_f.md)
