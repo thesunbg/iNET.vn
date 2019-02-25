@@ -68,5 +68,5 @@ Lấy biểu phí của đại lý
 **price**: Giá dịch vụ đã chiết khấu,chưa bao gồm VAT  
 **priceOrigin**: Giá dịch vụ chưa chiết khấu  
 **vat**: Phần trăm VAT  
-**planId**: id của danh sách plan
-**suffixId**: id của suffix
+**planId**: id của danh sách plan  
+**suffixId**: id của suffix trong [danh sách đuôi tên miền](#https://github.com/thesunbg/iNET.vn/blob/master/reseller_domain.md#danh-s%C3%A1ch-%C4%91u%C3%B4i-t%C3%AAn-mi%E1%BB%81n)
