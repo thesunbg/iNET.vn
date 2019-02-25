@@ -22,6 +22,9 @@
 * [Xem vết](#xem-vết)
 * [Chuyển đại lý](#chuyển-đại-lý)
 * [Chuyển tài khoản quản trị](#chuyển-tài-khoản-quản-trị)
+* [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
+
+
 ## [Danh sách](#search)
 Tìm kiếm danh sách tên miền của đại lý
 > **API:** /api/rms/v1/domain/search  
@@ -468,3 +471,34 @@ Chuyển người quản trị tên miền
 ```
 **id (bắt buộc)**: id tên miền  
 **customerId (bắt buộc)**: id của khách hàng mới  
+
+## [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
+Danh sách đuôi tên miền
+> **API:** /api/rms/v1/suffix/list  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   
+}
+```
+> **Dữ liệu trả về mẫu(JSON):**   
+```
+{
+"suffix":"vn",
+"type":"vn",
+"priority":3,
+"popular":1,
+"regOrigin":295000,
+"regPromotion":247500,
+"renOrigin":455000,
+"renPromotion":402500,
+"transferOrigin":0,
+"transferPromotion":0,
+"promotionFrom":"02/25/2019 00:00",
+"promotionTo":"02/26/2019 00:00"
+}
+```
+**suffix**: đuôi tên miền  
+**type**: loại tên miền: vn, gtld, new gtld  
+Các trường còn lại không sử dụng cho đại lý.  
