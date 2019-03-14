@@ -6,6 +6,7 @@
 * [Duy trì](#duy-trì)
 * [Nâng cấp gói](#nâng-cấp-gói)
 * [Danh sách gói cước](#danh-sách-gói-cước)
+* [Danh sách image](#danh-sách-image)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách Cloud VPS của đại lý
@@ -63,11 +64,13 @@ Tạo mới gói Cloud VPS
    "planName": "Gói A",   
    "customerId": 0,
    "period": 12,
+   "image": "tên image"
 }
 ```
 **planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
+**image (bắt buộc)**: tên image của gói VPS  
 
 ## [Đăng ký dùng thử](#create-trial)
 Đăng ký dùng thử gói Cloud VPS
@@ -129,3 +132,14 @@ Danh sách gói cước trên hệ thống
 **serviceType**: dịch vụ ['hosting', 'email', 'vps']  
 **name**: tên gói cước  
 **type**: l  
+
+## [Danh sách image](#image-list)
+Danh sách image trên hệ thống
+> **API:** /api/rms/v1/vps/listimage  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   
+}
+```
