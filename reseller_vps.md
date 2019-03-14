@@ -2,7 +2,6 @@
 * [Danh sách](#danh-sách)
 * [Chi tiết](#chi-tiết)
 * [Đăng ký mới](#Đăng-ký-mới)
-* [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
 * [Nâng cấp gói](#nâng-cấp-gói)
 * [Danh sách gói cước](#danh-sách-gói-cước)
@@ -71,21 +70,6 @@ Tạo mới gói Cloud VPS
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 **image (bắt buộc)**: tên image của gói VPS  
-
-## [Đăng ký dùng thử](#create-trial)
-Đăng ký dùng thử gói Cloud VPS
-> **API:** /api/rms/v1/vps/createtrial  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "planName": "Gói A",   
-   "customerId": 0,
-}
-```
-**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
-**period (bắt buộc)**: số tháng đăng ký  
-**customerId (bắt buộc)**: id của khách hàng  
 
 ## [Duy trì](#renew)
 Duy trì gói Cloud VPS
