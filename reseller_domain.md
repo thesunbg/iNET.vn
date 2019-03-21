@@ -76,14 +76,10 @@ Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay 
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "name": "xn--tnmin-hsa0954c.vn",
-   "idnName": "tênmiền.vn",
-   "registrar": "inet"
+   "name": "test.vn"
 }
 ```
 **name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
-**idnName**: tên miền tiếng việt  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
 
 ## [Chuyển mã puny code tên miền tiếng việt](#validateidnname)
 Chuyển mã puny code cho tên miền tiếng việt
@@ -107,7 +103,6 @@ Chuyển mã puny code cho tên miền tiếng việt
    "name": "test.vn",
    "period": 1,
    "customerId": 0,
-   "registrar": "inet", 
    "nsList": [{"hostname": "ns1.inet.vn"},{"hostname": "ns2.inet.vn"}], 
    "contacts": [
       {
@@ -163,7 +158,6 @@ Chuyển mã puny code cho tên miền tiếng việt
 **idnName**: tên miền tiếng việt  
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
 **customerId (bắt buộc)**: id của khách hàng  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
 **nsList (bắt buộc)**: danh sách nameserver  
 **contacts (bắt buộc)**: danh sách contact của tên miền    
 
