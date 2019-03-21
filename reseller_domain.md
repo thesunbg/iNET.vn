@@ -104,12 +104,11 @@ Chuyển mã puny code cho tên miền tiếng việt
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "name": "xn--tnmin-hsa0954c.vn",
-   "idnName": "tênmiền.vn",
+   "name": "test.vn",
    "period": 1,
    "customerId": 0,
    "registrar": "inet", 
-   "nsList": [{hostname: 'ns1.inet.vn'},{hostname: 'ns2.inet.vn}], 
+   "nsList": [{"hostname": "ns1.inet.vn"},{"hostname": "ns2.inet.vn"}], 
    "contacts": [
       {
          "fullname": "Công ty A",
@@ -176,13 +175,11 @@ Duy trì tên miền
 ```
 {
    "id": 0,
-   "period": 1,
-   "expireDate": "2018-01-01 00:00",
+   "period": 1
 }
 ```
 **id (bắt buộc)**: id tên miền  
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
-**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền  (YYYY-MM-DD HH:MI)  
 
 ## [Ẩn thông tin tên miền](#privacyprotection)
 Ẩn thông tin tên miền trên whois
