@@ -14,10 +14,10 @@
 * [Lấy thông tin máy chủ](#Lấy-thông-tin-máy-chủ)
 * [Đăng nhập console](#đăng-nhập-console)
 * [Xem vết hệ thống](#xem-vết-hệ-thống)
-* [Bật máy chủ](#Bật-máy-chủ)
+* [Khởi động máy chủ](#Khởi-động-máy-chủ)
 * [Tắt máy chủ](#Tắt-máy-chủ)
-* [Khởi động cứng máy chủ](#Khởi-động-cứng-máy-chủ)
-* [Khởi động mềm máy chủ](#Khởi-động-mềm-máy-chủ)
+* [Khởi động lại máy chủ(cứng)](#Khởi-động-lại-cứng-máy-chủ)
+* [Khởi động lại máy chủ(mềm)](#Khởi-động-lại-mềm-máy-chủ)
 * [Xóa máy chủ](#Xóa-máy-chủ)
 
 ## [Danh sách](#search)
@@ -184,6 +184,115 @@ Tạo volume cho Cloud VPS
 ## [Xóa volume](#delete-volume)
 Cài image cho Cloud VPS
 > **API:** /api/rms/v1/vps/deletevolume  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Tạo máy chủ](#create-server)
+Tạo máy chủ cho Cloud VPS
+> **API:** /api/rms/v1/vps/createserver  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Lấy thông tin máy chủ](#get-server)
+Lấy thông tin máy chủ gói Cloud VPS
+> **API:** /api/rms/v1/vps/getserver  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Đăng nhập console](#console)
+Lấy đường dẫn console cho Cloud VPS
+> **API:** /api/rms/v1/vps/console  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Xem vết hệ thống](#logaction)
+Xem vết gói Cloud VPS
+> **API:** /api/rms/v1/vps/getlogaction  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Khởi động máy chủ](#start-instance)
+Khởi động máy chủ Cloud VPS
+> **API:** /api/rms/v1/vps/startinstance  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Tắt máy chủ](#stop-instance)
+Tắt máy chủ Cloud VPS
+> **API:** /api/rms/v1/vps/stopinstance  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+
+## [Khởi động lại máy chủ(cứng)](#reboot-hard)
+Khởi động lại máy chủ (c) Cloud VPS
+> **API:** /api/rms/v1/vps/reboothard  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Khởi động lại máy chủ(mềm)](#reboot-soft)
+Khởi động lại máy chủ (mềm) Cloud VPS
+> **API:** /api/rms/v1/vps/rebootsoft  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+## [Xóa máy chủ](#delete-server)
+Tắt máy chủ Cloud VPS
+> **API:** /api/rms/v1/vps/deleteserver  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
