@@ -115,7 +115,7 @@ Chuyển mã puny code cho tên miền tiếng việt
          "phone": "0438385588",
          "fax": "0438385588",
          "type": "registrant",
-         "taxCode": ""0123456789"
+         "taxCode": "0123456789"
       },
       {
          "fullname": "Nguyễn Văn A",
