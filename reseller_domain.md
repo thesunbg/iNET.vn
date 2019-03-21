@@ -162,7 +162,19 @@ Chuyển mã puny code cho tên miền tiếng việt
 **customerId (bắt buộc)**: id của khách hàng  
 **nsList (bắt buộc)**: danh sách nameserver  
 **contacts (bắt buộc)**: danh sách contact của tên miền    
-**contacts.fullname **: tên đầy đủ c    
+**contacts.fullname**: tên đầy đủ của contact    
+**contacts.organization**: contact thuộc tổ chức hay không(với tên miền .vn thì 3 contact admin, billing, technique bắt buộc phải là cá nhân)    
+**contacts.email**: email của contact    
+**contacts.country**: mã quốc gia của contact    
+**contacts.province**: mã tỉnh thành của contact    
+**contacts.address**: địa chỉ của contact    
+**contacts.phone**: số điện thoại của contact(nhập +84-XXX hoặc 0XXX)    
+**contacts.fax**: số fix của contact    
+**contacts.gender**: giới tính của contact(nếu contact là cá nhân): n     
+**contacts.idNumber**: số CMT của contact(nếu contact là cá nhân)    
+**contacts.birthday**: ngày sinh của contact(nếu contact là cá nhân, định dạng DD/MM/YYYY)    
+**contacts.taxCode**: mã số thuế của contact(nếu contact là tổ chức)    
+**contacts.type**: loại contact: chủ thể(registrant), quản trị(admin), thanh toán(billing), technique(kỹ thuật)...
 
 ## [Duy trì](#renew)
 Duy trì tên miền
