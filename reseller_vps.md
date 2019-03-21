@@ -6,6 +6,19 @@
 * [Nâng cấp gói](#nâng-cấp-gói)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 * [Danh sách image](#danh-sách-image)
+* [Cập nhật ghi chú](#cập-nhật-ghi-chú)
+* [Cài đặt image](#cài-đặt-image)
+* [Tạo volume](#Tạo-volume)
+* [Xóa volume](#Xóa-volume)
+* [Tạo máy chủ](#Tạo-máy-chủ)
+* [Lấy thông tin máy chủ](#Lấy-thông-tin-máy-chủ)
+* [Đăng nhập console](#đăng-nhập-console)
+* [Xem vết hệ thống](#xem-vết-hệ-thống)
+* [Bật máy chủ](#Bật-máy-chủ)
+* [Tắt máy chủ](#Tắt-máy-chủ)
+* [Khởi động cứng máy chủ](#Khởi-động-cứng-máy-chủ)
+* [Khởi động mềm máy chủ](#Khởi-động-mềm-máy-chủ)
+* [Xóa máy chủ](#Xóa-máy-chủ)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách Cloud VPS của đại lý
@@ -62,14 +75,12 @@ Tạo mới gói Cloud VPS
 {
    "planName": "Gói A",   
    "customerId": 0,
-   "period": 12,
-   "image": "tên image"
+   "period": 12
 }
 ```
 **planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
-**image (bắt buộc)**: tên image của gói VPS  
 
 ## [Duy trì](#renew)
 Duy trì gói Cloud VPS
@@ -127,3 +138,17 @@ Danh sách image trên hệ thống
    
 }
 ```
+
+## [Cập nhật ghi chú](#update-note)
+Cập nhật trường ghi chú cho gói Cloud VPS. Mục đích ghi chú riêng dễ nhận biết gói Cloud VPS
+> **API:** /api/rms/v1/vps/updatenote  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "note": "note"
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+**note (bắt buộc)**: ghi chú  
