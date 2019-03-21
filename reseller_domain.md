@@ -115,7 +115,7 @@ Chuyển mã puny code cho tên miền tiếng việt
          "phone": "0438385588",
          "fax": "0438385588",
          "type": "registrant",
-         "dataExtend": "{\"taxCode\":\"0123456789\"}"
+         "taxCode": ""0123456789"
       },
       {
          "fullname": "Nguyễn Văn A",
@@ -127,7 +127,9 @@ Chuyển mã puny code cho tên miền tiếng việt
          "phone": "0974019049",
          "fax": "0974019049",
          "type": "admin",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+         "gender": "male",
+         "idNumber": "030810700",
+         "birthday": "01/01/1971"
       },
       {
          "fullname": "Nguyễn Văn A",
@@ -138,8 +140,10 @@ Chuyển mã puny code cho tên miền tiếng việt
          "address": "247 cau giay",
          "phone": "0974019049",
          "fax": "0974019049",
-         "type": "technique",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+         "type": "technique",         
+         "gender": "male",
+         "idNumber": "030810700",
+         "birthday": "01/01/1971"
       },
       {
          "fullname": "Nguyễn Văn A",
@@ -150,8 +154,10 @@ Chuyển mã puny code cho tên miền tiếng việt
          "address": "247 cau giay",
          "phone": "0974019049",
          "fax": "0974019049",
-         "type": "billing",
-         "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}"
+         "type": "billing",         
+         "gender": "male",
+         "idNumber": "030810700",
+         "birthday": "01/01/1971"
       }
    ]
 }
