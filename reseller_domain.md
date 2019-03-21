@@ -131,6 +131,7 @@ Chuyển mã puny code cho tên miền tiếng việt
       },
       {
          "fullname": "Nguyễn Văn A",
+         "organization": false,
          "email": "a@example.vn",
          "country": "VN",
          "province": "HNI",
@@ -142,6 +143,7 @@ Chuyển mã puny code cho tên miền tiếng việt
       },
       {
          "fullname": "Nguyễn Văn A",
+         "organization": false,
          "email": "a@example.vn",
          "country": "VN",
          "province": "HNI",
@@ -160,6 +162,7 @@ Chuyển mã puny code cho tên miền tiếng việt
 **customerId (bắt buộc)**: id của khách hàng  
 **nsList (bắt buộc)**: danh sách nameserver  
 **contacts (bắt buộc)**: danh sách contact của tên miền    
+**contacts.fullname **: tên đầy đủ c    
 
 ## [Duy trì](#renew)
 Duy trì tên miền
