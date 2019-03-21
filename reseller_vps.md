@@ -152,3 +152,43 @@ Cập nhật trường ghi chú cho gói Cloud VPS. Mục đích ghi chú riêng
 ```
 **id (bắt buộc)**: id gói Cloud VPS   
 **note (bắt buộc)**: ghi chú  
+
+## [Cài đặt image](#choose-image)
+Cài image cho Cloud VPS
+> **API:** /api/rms/v1/vps/chooseimage  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "image": "image"
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+**image (bắt buộc)**: Tên của image  
+
+## [Tạo volume](#create-volume)
+Tạo volume cho Cloud VPS
+> **API:** /api/rms/v1/vps/createvolume  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "image": "image"
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+**image**: Tên của image, không bắt buộc  
+
+## [Xóa volume](#delete-volume)
+Cài image cho Cloud VPS
+> **API:** /api/rms/v1/vps/deletevolume  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
