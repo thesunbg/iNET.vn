@@ -73,12 +73,12 @@ Tạo mới gói Cloud VPS
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "planName": "Gói A",   
+   "planId": 0,   
    "customerId": 0,
    "period": 12
 }
 ```
-**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planId (bắt buộc)**: planId của gói Cloud VPS(Xem trong danh sách plan)  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
