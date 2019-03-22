@@ -1,7 +1,7 @@
 # [Email](#email)
 * [Danh sách](#danh-sách)
 * [Chi tiết](#chi-tiết)
-* [Kiểm tra sự tồn tại](#Kiểm-tra-sự-t)
+* [Kiểm tra sự tồn tại](#Kiểm-tra-sự-tồn-tại)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
