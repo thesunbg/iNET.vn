@@ -1,7 +1,7 @@
 # [Email](#email)
 * [Danh sách](#danh-sách)
 * [Chi tiết](#chi-tiết)
-* [Kiểm tra sự tồn tại](#Kiểm-tr)
+* [Kiểm tra sự tồn tại](#Kiểm-tra-sự-t)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
@@ -67,7 +67,7 @@ Chi tiết gói email
 **id (bắt buộc)**: id gói email   
 
 ## [Kiểm tra sự tồn tại](#checkavailable)
-Kiểm tra sự tồn tại của tên miền hosting có được phép đăng ký nữa không
+Kiểm tra sự tồn tại của tên miền email có được phép đăng ký nữa không
 > **API:** /api/rms/v1/email/checkdomainavailable  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
@@ -98,7 +98,6 @@ Tạo mới gói email
 }
 ```
 **domainName (bắt buộc)**: tên miền email  
-**type**: loại hosting ['email-new']  
 **planId (bắt buộc)**: planId của gói Email(Xem trong danh sách plan)  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
