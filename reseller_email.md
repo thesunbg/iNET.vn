@@ -1,7 +1,7 @@
 # [Email](#email)
 * [Danh sách](#danh-sách)
 * [Chi tiết](#chi-tiết)
-* [Kiểm tra sự tồn tại](#K)
+* [Kiểm tra sự tồn tại](#Kiểm-tr)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
@@ -92,15 +92,14 @@ Tạo mới gói email
 ```
 {
    "domainName": "example.com",
-   "type": "email-new",
-   "planName": "Gói A",   
+   "planId": 0,   
    "customerId": 0,
    "period": 12,
 }
 ```
 **domainName (bắt buộc)**: tên miền email  
 **type**: loại hosting ['email-new']  
-**planName (bắt buộc)**: gói cước['Gói A','Gói B','Gói C','Gói D','Gói E']  
+**planId (bắt buộc)**: planId của gói Email(Xem trong danh sách plan)  
 **period (bắt buộc)**: số tháng đăng ký  
 **customerId (bắt buộc)**: id của khách hàng  
 
