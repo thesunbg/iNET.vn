@@ -255,7 +255,7 @@ Khởi động máy chủ Cloud VPS
 
 ## [Tắt máy chủ](#stop-instance)
 Tắt máy chủ Cloud VPS
-> **API:** /api/rms/v1/vps/stopinstance  
+> **API:** /api/rms/v1/vps/sh  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
