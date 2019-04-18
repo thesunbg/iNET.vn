@@ -14,6 +14,7 @@
 * [Lấy thông tin máy chủ](#Lấy-thông-tin-máy-chủ)
 * [Đăng nhập console](#đăng-nhập-console)
 * [Xem vết hệ thống](#xem-vết-hệ-thống)
+* [Xem biểu đồ](#xem-b)
 * [Khởi động máy chủ](#Khởi-động-máy-chủ)
 * [Tắt máy chủ](#Tắt-máy-chủ)
 * [Khởi động lại máy chủ(cứng)](#Khởi-động-lại-cứng-máy-chủ)
