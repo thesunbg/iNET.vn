@@ -9,7 +9,7 @@
 * [Đổi tên miền chính](#Đổi-tên-miền-chính)
 * [Lấy danh sách database của gói hosting](#Lấy-danh-sách-database-của-gói-hosting)
 * [Tạo mới database](#Tạo-mới-database)
-* [X database](#Xóa-database)
+* [Xóa database](#Xóa-database)
 * [Đăng nhập](#Đăng-nhập)
 * [Đổi mật khẩu](#Đổi-mật-khẩu)
 * [Danh sách gói cước](#danh-sách-gói-cước)
