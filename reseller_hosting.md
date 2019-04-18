@@ -164,6 +164,46 @@ Nâng cấp gói hosting mới
 **id (bắt buộc)**: id hosting  
 **domainName (bắt buộc)**: tên miền mới  
 
+## [Lấy danh sách database của gói hosting](#get-all-database)
+Lấy danh sách tất cả database của gói hosting
+> **API:** /api/rms/v1/hosting/getalldatabase  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+}
+```
+**id (bắt buộc)**: id gói hosting  
+
+## [Tạo mới database](#create-database)
+Tạo mới database
+> **API:** /api/rms/v1/hosting/createdatabase  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "databaseName": "nameofdatabase"
+}
+```
+**id (bắt buộc)**: id gói hosting  
+**databaseName (bắt buộc)**: tên database  
+
+## [Xóa database](#delete-database)
+Tạo mới database
+> **API:** /api/rms/v1/hosting/deletedatabase  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "databaseName": "nameofdatabase"
+}
+```
+**id (bắt buộc)**: id gói hosting  
+**databaseName (bắt buộc)**: tên database  
+
 ## [Đăng nhập](#signin)
 Get link đăng nhập gói hosting
 > **API:** /api/rms/v1/hosting/urlsignin  
