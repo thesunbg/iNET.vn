@@ -244,7 +244,7 @@ Xem vết gói Cloud VPS
 
 
 ## [Xem biểu đồ](#geturlgrafana)
-Xem biểu đồ truy cập CPU, RAM, Tr của Cloud VPS
+Xem biểu đồ truy cập CPU, RAM, Tràffic của Cloud VPS
 > **API:** /api/rms/v1/vps/geturlgrafana  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
