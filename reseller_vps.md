@@ -14,7 +14,7 @@
 * [Lấy thông tin máy chủ](#Lấy-thông-tin-máy-chủ)
 * [Đăng nhập console](#đăng-nhập-console)
 * [Xem vết hệ thống](#xem-vết-hệ-thống)
-* [Xem biểu đồ](#xem-b)
+* [Xem biểu đồ](#xem-biểu-đồ)
 * [Khởi động máy chủ](#Khởi-động-máy-chủ)
 * [Tắt máy chủ](#Tắt-máy-chủ)
 * [Khởi động lại máy chủ(cứng)](#Khởi-động-lại-cứng-máy-chủ)
@@ -233,6 +233,19 @@ Lấy đường dẫn console cho Cloud VPS
 ## [Xem vết hệ thống](#logaction)
 Xem vết gói Cloud VPS
 > **API:** /api/rms/v1/vps/getlogaction  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0
+}
+```
+**id (bắt buộc)**: id gói Cloud VPS   
+
+
+## [Xem biểu đồ](#geturlgrafana)
+Xem biểu đồ truy cập CPU, RAM, Tr của Cloud VPS
+> **API:** /api/rms/v1/vps/geturlgrafana  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
