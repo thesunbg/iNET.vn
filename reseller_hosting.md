@@ -191,7 +191,7 @@ Tạo mới database
 **databaseName (bắt buộc)**: tên database  
 
 ## [Xóa database](#delete-database)
-Tạo mới database
+X database
 > **API:** /api/rms/v1/hosting/deletedatabase  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
