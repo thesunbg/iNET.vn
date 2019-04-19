@@ -169,9 +169,9 @@ Nâng cấp gói hosting mới
 **id (bắt buộc)**: id hosting  
 **domainName (bắt buộc)**: tên miền mới  
 
-## [Lấy danh sách database của gói hosting](#get-all-database)
+## [Lấy danh sách database](#list-databases)
 Lấy danh sách tất cả database của gói hosting
-> **API:** /api/rms/v1/hosting/getalldatabase  
+> **API:** /api/rms/v1/hosting/listdatabases  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
@@ -189,25 +189,67 @@ Tạo mới database
 ```
 {
    "id": 0,
-   "databaseName": "nameofdatabase"
+   "databaseName": "databaseName"
 }
 ```
 **id (bắt buộc)**: id gói hosting  
-**databaseName (bắt buộc)**: tên database  
+**databaseName (bắt buộc)**: tên database, tên của database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseName  
 
 ## [Xóa database](#delete-database)
-X database
+Xóa database
 > **API:** /api/rms/v1/hosting/deletedatabase  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
    "id": 0,
-   "databaseName": "nameofdatabase"
+   "databaseName": "databaseName"
 }
 ```
 **id (bắt buộc)**: id gói hosting  
-**databaseName (bắt buộc)**: tên database  
+**databaseName (bắt buộc)**: tên database, tên của database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseName    
+
+## [Lấy danh sách user database](#list-dbusers)
+Lấy danh sách tất cả database của gói hosting
+> **API:** /api/rms/v1/hosting/listdbusers  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+}
+```
+**id (bắt buộc)**: id gói hosting  
+
+## [Tạo mới user database](#create-dbuser)
+Tạo mới database
+> **API:** /api/rms/v1/hosting/createdbuser  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "databaseUser": "databaseUser".
+   "databasePassword": "databasePassword"
+}
+```
+**id (bắt buộc)**: id gói hosting  
+**databaseUser (bắt buộc)**: tên tài khoản user database, tên của user database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseUser    
+**databasePassword (bắt buộc)**: mật khẩu tài khoản, chú ý 
+
+## [Xóa user database](#delete-dbuser)
+Xóa user database
+> **API:** /api/rms/v1/hosting/deletedbuser  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "databaseUser": "databaseUser"
+}
+```
+**id (bắt buộc)**: id gói hosting  
+**databaseUser (bắt buộc)**: tên tài khoản user database, tên của user database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseUser      
 
 ## [Đăng nhập](#signin)
 Get link đăng nhập gói hosting
