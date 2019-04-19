@@ -251,6 +251,24 @@ Xóa user database
 **id (bắt buộc)**: id gói hosting  
 **databaseUser (bắt buộc)**: tên tài khoản user database, tên của user database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseUser      
 
+## [Phân quyền cho user database](#getdbuserprivileges)
+Xóa user database
+> **API:** /api/rms/v1/hosting/getdbuserprivileges  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": 0,
+   "databaseUser": "databaseUser",
+   "databaseName": "databaseName",
+   "databasePrivileges": ["ALL PRIVILEGES"],
+}
+```
+**id (bắt buộc)**: id gói hosting  
+**databaseUser (bắt buộc)**: tên tài khoản user database, tên của user database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseUser  
+**databaseName (bắt buộc)**: tên của database, tên của database phải bắt đầu bằng tài khoản hosting(username), ví dụ: username_databaseName  
+**databasePrivileges (bắt buộc)**: là kiểu mảng, có thể nằm trong các giá trị sau: 'ALL PRIVILEGES', 'ALTER', 'ALTER ROUTINE', 'CREATE', 'CREATE ROUTINE', 'CREATE TEMPORARY TABLES', 'CREATE VIEW', 'DROP', 'EVENT', 'EXECUTE', 'INDEX', 'INSERT', 'LOCK TABLES', 'REFERENCES', 'SELECT', 'SHOW VIEW', 'TRIGGER', 'UPDATE'  
+
 ## [Đăng nhập](#signin)
 Get link đăng nhập gói hosting
 > **API:** /api/rms/v1/hosting/urlsignin  
