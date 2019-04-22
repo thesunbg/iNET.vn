@@ -253,7 +253,7 @@ Xóa user database
 
 ## [Phân quyền cho user database](#getdbuserprivileges)
 Phân quyền cho user database
-> **API:** /api/rms/v1/hosting/getdbuserprivileges  
+> **API:** /api/rms/v1/hosting/setdbuserprivileges  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
