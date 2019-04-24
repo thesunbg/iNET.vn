@@ -491,7 +491,7 @@ Danh sách đuôi tên miền
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   
+   "suffix": "vn"
 }
 ```
 > **Dữ liệu trả về mẫu(JSON):**   
