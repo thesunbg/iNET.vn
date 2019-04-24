@@ -496,7 +496,7 @@ Danh sách đuôi tên miền
 ```
 > **Dữ liệu trả về mẫu(JSON):**   
 ```
-{
+[{
 "suffix":"vn",
 "type":"vn",
 "priority":3,
