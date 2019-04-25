@@ -20,6 +20,7 @@
 * [Khởi động lại máy chủ(cứng)](#Khởi-động-lại-cứng-máy-chủ)
 * [Khởi động lại máy chủ(mềm)](#Khởi-động-lại-mềm-máy-chủ)
 * [Xóa máy chủ](#Xóa-máy-chủ)
+* [Biểu phí tùy chỉnh](#Biểu-phí-tùy-chỉnh)
 
 ## [Danh sách](#search)
 Tìm kiếm danh sách Cloud VPS của đại lý
@@ -315,3 +316,16 @@ Tắt máy chủ Cloud VPS
 }
 ```
 **id (bắt buộc)**: id gói Cloud VPS   
+
+
+## [Biểu phí tùy chỉnh](#plandetail)
+Biểu phí tùy chỉnh 
+> **API:** /api/rms/v1/plandetail/getbyplanid  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": planid
+}
+```
+**id (bắt buộc)**: id plan gói Cloud VPS   
