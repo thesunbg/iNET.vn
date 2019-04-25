@@ -9,4 +9,4 @@
 * [Email](https://github.com/thesunbg/iNET.vn/blob/master/reseller_email.md)
 * [Cloud VPS](https://github.com/thesunbg/iNET.vn/blob/master/reseller_cloudvps.md)
 * [Biểu phí đại lý](https://github.com/thesunbg/iNET.vn/blob/master/reseller_fee.md)
-* [Ticket](https://github.com/thesunbg/iNET.vn/blob/master/reseller_t.md)
+* [Ticket](https://github.com/thesunbg/iNET.vn/blob/master/reseller_ticket.md)
