@@ -1,7 +1,7 @@
 # [Hosting](#hosting)
 * [Danh sách](#danh-sách)
 * [Chi tiết](#chi-tiết)
-* [Kiểm tra sự tồn tại](#K)
+* [Kiểm tra sự tồn tại](#Kiểm-tra-sự-t)
 * [Đăng ký mới](#Đăng-ký-mới)
 * [Đăng ký dùng thử](#Đăng-ký-dùng-thử)
 * [Duy trì](#duy-trì)
