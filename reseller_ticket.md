@@ -32,7 +32,7 @@ Phản hồi ticket
 ```
 {
    "id": id của ticket,  
-   "replyContent": nội dung ticket  
+   "replyContent": nội dung ph  
 }
 
 
