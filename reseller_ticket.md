@@ -1,5 +1,6 @@
 # [Ticket](#ticket)
 * [Tạo mới ticket](#tạo-mới-ticket)
+* [Phản hồi ticket](#phản-hồi-ticket)
 * [Chi tiết ticket](#chi-tiết-ticket)
 * [Danh sách ticket](#danh-sách-ticket)
 
@@ -23,6 +24,17 @@ Tạo mới ticket
 **customerEmail**: Email khách hàng  
 **customerName**: Tên khách hàng  
 
+## [Phản hồi ticket](#phản-hồi-ticket)
+Phản hồi ticket
+> **API:** /api/rms/v1/ticket/reply  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": id của ticket,  
+   "replyContent": nội dung ticket  
+}
+
 
 ## [Chi tiết ticket](#chi-tiết-ticket)
 Chi tiết ticket
@@ -31,7 +43,7 @@ Chi tiết ticket
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "id": id của ticket
+   "id": id của ticket  
 }
 ```
 
