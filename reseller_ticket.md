@@ -34,7 +34,7 @@ Phản hồi ticket
    "id": id của ticket,  
    "replyContent": nội dung ph  
 }
-
+```
 
 ## [Chi tiết ticket](#chi-tiết-ticket)
 Chi tiết ticket
