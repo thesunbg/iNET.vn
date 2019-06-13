@@ -7,6 +7,6 @@
 * [Giao dịch](https://github.com/thesunbg/iNET.vn/blob/master/reseller_transaction.md)
 * [Hosting](https://github.com/thesunbg/iNET.vn/blob/master/reseller_hosting.md)
 * [Email](https://github.com/thesunbg/iNET.vn/blob/master/reseller_email.md)
-* [Cloud VPS](https://github.com/thesunbg/iNET.vn/blob/master/reseller_cloudvps.md)
+* [Cloud VPS](https://github.com/thesunbg/iNET.vn/blob/master/reseller_vps.md)
 * [Biểu phí đại lý](https://github.com/thesunbg/iNET.vn/blob/master/reseller_fee.md)
 * [Ticket](https://github.com/thesunbg/iNET.vn/blob/master/reseller_ticket.md)
