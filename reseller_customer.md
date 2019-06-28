@@ -64,7 +64,7 @@ Tạo một khách hàng mới
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
-> **API:** /api/rms/v1/customer/update  
+> **API:** /api/rms/v1/customer/updateinfo  
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
 ```
