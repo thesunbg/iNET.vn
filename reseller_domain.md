@@ -43,6 +43,7 @@ Tìm kiếm danh sách tên miền của đại lý
    "contract": true,
    "verifyStatus": true,
    "privacyProtection": true,
+   "customerId": '',
    "fromIssueDate": "2018-01-01 00:00",
    "toIssueDate": "2018-01-01 00:00",
    "fromRenewDate": "2018-01-01 00:00",
@@ -62,6 +63,7 @@ Tìm kiếm danh sách tên miền của đại lý
 **contract**: đã có bản khai? true/false  
 **verifyStatus**: tên miền đã được xác nhận? true/false  
 **privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
+**customerId**: id khách hàng  
 **fromIssueDate**: ngày đăng ký từ  (YYYY-MM-DD HH:MI)  
 **toIssueDate**: ngày đăng ký tới  (YYYY-MM-DD HH:MI)  
 **fromRenewDate**: ngày duy trì từ  (YYYY-MM-DD HH:MI)  
