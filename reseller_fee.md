@@ -51,8 +51,7 @@ Lấy biểu phí của đại lý
 ```
 > **Dữ liệu trả về mẫu(JSON):**   
 ```
-{
-    "feeDefId": 32,  
+{    
     "type": "register",  
     "serviceType": "domain",  
     "price": 646800,  
@@ -62,7 +61,6 @@ Lấy biểu phí của đại lý
     "suffixId": 919
 }
 ```
-**feeDefId**: id của biểu phí đại lý  
 **type**: loại phí: register(đăng ký mới), renew(duy trì), register-vn-service(phí dịch vụ đăng ký cho tên miền .vn), renew-vn-service(phí dịch vụ duy trì cho tên miền .vn), change-registrant(chuyển tên chủ thể), transfer(chuyển nhà đăng ký), registrar-lock(dịch vụ khóa tên miền cấp nhà đăng ký), registry-lock(dịch vụ khóa tên miền cấp Registry VNNIC), dnssec(phí DNSSEC)   
 **serviceType**: dịch vụ ['domain', 'hosting', 'email', 'vps']  
 **price**: Giá dịch vụ đã chiết khấu,chưa bao gồm VAT  
