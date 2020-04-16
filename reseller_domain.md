@@ -23,6 +23,8 @@
 * [Chuyển đại lý](#chuyển-đại-lý)
 * [Chuyển tài khoản quản trị](#chuyển-tài-khoản-quản-trị)
 * [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
+* [Upload bản khai tên miền](#upload-bản-khai-tên-miền)
+
 
 
 ## [Danh sách](#search)
@@ -516,3 +518,19 @@ Danh sách đuôi tên miền
 **suffix**: đuôi tên miền  
 **type**: loại tên miền: vn, gtld, new gtld  
 Các trường còn lại không sử dụng cho đại lý.  
+
+
+## [Upload bản khai tên miền](#upload-bản-khai-tên-miền)
+Upload bản khai tên miền
+> **API:** /api/rms/v1/domain/uploadcontract  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": id tên miền,
+   "file": {
+      "base64Content":xxx,
+      "name": "filename",
+      "size": 123456
+   }
+}
