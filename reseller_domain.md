@@ -534,6 +534,7 @@ Upload bản khai tên miền
       "size": 123456
    }
 }
+```
 
 
 ## [Upload chứng minh thư khách hàng](#upload-chứng-minh-thư-khách-hàng)
