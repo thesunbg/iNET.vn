@@ -24,7 +24,7 @@
 * [Chuyển tài khoản quản trị](#chuyển-tài-khoản-quản-trị)
 * [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
 * [Upload bản khai tên miền](#upload-bản-khai-tên-miền)
-
+* [Upload chứng minh thư khách hàng](#upload-chứng-minh-thư-khách-hàng)
 
 
 ## [Danh sách](#search)
@@ -529,8 +529,27 @@ Upload bản khai tên miền
 {
    "id": id tên miền,
    "file": {
-      "base64Content":xxx,
+      "base64Content":xxx, //chuỗi base64 của file bản khai
       "name": "filename",
       "size": 123456
    }
 }
+
+
+## [Upload chứng minh thư khách hàng](#upload-chứng-minh-thư-khách-hàng)
+Upload chứng minh thư của khách hàng
+> **API:** /api/rms/v1/contact/uploadidnumber  
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": id contact tên miền,
+   "documentType": "frontEnd", (hoặc backEnd là mặt sau)
+   "file": {
+      "base64Content":xxx, //chuỗi base64 của file 
+      "name": "filename",
+      "size": 123456
+   }
+}
+
+Nhiều contact có cùng email thì chỉ cần upload một file CMT duy nhất.
