@@ -264,6 +264,8 @@ Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ D
    "digest": "digest",
    "digestType": "digestType",
    "domainId": "domainId",
+   "recordType": "recordType",
+   "data": "data",
 }
 ```
 **domainId (bắt buộc)**: id tên miền  
@@ -271,6 +273,8 @@ Sau khi ký xong chờ khoảng 30 giây rồi chạy tiếp hàm đồng bộ D
 **alg (bắt buộc)**: alg  
 **digest (bắt buộc)**: digest  
 **digestType (bắt buộc)**: digestType
+**recordType (bắt buộc)**: recordType
+**data (bắt buộc)**: data
 
 ## [Cập nhật khóa bản ghi DNSSEC trước khi đồng bộ](#updatednssecmanual)
 Ap dụng cho tên miền không sử dụng DNS của iNET  
@@ -285,6 +289,8 @@ Cập nhật các thông tin khóa bản ghi của tên miền
    "digest": "digest",
    "digestType": "digestType",
    "domainId": "domainId",
+   "recordType": "recordType",
+   "data": "data",
 }
 ```
 **domainId (bắt buộc)**: id tên miền  
@@ -292,6 +298,9 @@ Cập nhật các thông tin khóa bản ghi của tên miền
 **alg (bắt buộc)**: alg  
 **digest (bắt buộc)**: digest  
 **digestType (bắt buộc)**: digestType
+**recordType (bắt buộc)**: recordType
+**data (bắt buộc)**: data
+
 
 ## [Xóa ký DNSSEC thủ công](#deletednssecmanual)
 Ap dụng cho tên miền không sử dụng DNS của iNET  
