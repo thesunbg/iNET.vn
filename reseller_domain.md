@@ -537,11 +537,7 @@ Upload bản khai tên miền
 ```
 {
    "id": id tên miền,
-   "file": {
-      "base64Content":xxx, //chuỗi base64 của file bản khai
-      "name": "filename",
-      "size": 123456
-   }
+   "url": "đường dẫn file contract"
 }
 ```
 
@@ -555,11 +551,7 @@ Upload chứng minh thư của khách hàng
 {
    "id": id contact tên miền,
    "documentType": "frontEnd", (hoặc backEnd là mặt sau)
-   "file": {
-      "base64Content":xxx, //chuỗi base64 của file 
-      "name": "filename",
-      "size": 123456
-   }
+   "url": "đường dẫn file"
 }
 
 Nhiều contact có cùng email thì chỉ cần upload một file CMT duy nhất.
