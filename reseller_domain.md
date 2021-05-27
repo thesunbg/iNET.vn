@@ -20,8 +20,6 @@
 * [Đổi mã auth code](#Đổi-mã-auth-code)
 * [Đổi mật khẩu đăng nhập](#Đổi-mật-khẩu-đăng-nhập)
 * [Xem vết](#xem-vết)
-* [Chuyển đại lý](#chuyển-đại-lý)
-* [Chuyển tài khoản quản trị](#chuyển-tài-khoản-quản-trị)
 * [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
 * [Upload bản khai tên miền](#upload-bản-khai-tên-miền)
 * [Upload chứng minh thư khách hàng](#upload-chứng-minh-thư-khách-hàng)
@@ -468,34 +466,6 @@ Xem vết tác động của tên miền
 **actionName**: hành động[{'update-record': 'cập nhật bản ghi'}, {'update-status': 'cập nhật trạng thái'}, {'update-ns': 'cập nhật nameserver'}, {'change-password': 'đổi mật khẩu'}]  
 **fromCreatedDate**: ngày tác động từ  (YYYY-MM-DD HH:MI)  
 **toCreatedDate**: ngày tác động tới  (YYYY-MM-DD HH:MI)  
-
-## [Chuyển đại lý](#changeorganization)
-Chuyển tên miền sang đại lý mới
-> **API:** /api/rms/v1/roid/changeorganization  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "id": 0,
-   "orgId": 1
-}
-```
-**id (bắt buộc)**: id tên miền  
-**orgId (bắt buộc)**: id của đại lý mới  
-
-## [Chuyển tài khoản quản trị](#changecustomer)
-Chuyển người quản trị tên miền
-> **API:** /api/rms/v1/roid/changecustomer  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
-   "id": 0,
-   "customerId": 1
-}
-```
-**id (bắt buộc)**: id tên miền  
-**customerId (bắt buộc)**: id của khách hàng mới  
 
 ## [Danh sách đuôi tên miền](#danh-sách-đuôi-tên-miền)
 Danh sách đuôi tên miền
