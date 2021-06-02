@@ -52,13 +52,7 @@ Lấy biểu phí của đại lý
 > **Dữ liệu trả về mẫu(JSON):**   
 ```
 {    
-    "type": "register",  
-    "serviceType": "domain",  
-    "price": 646800,  
-    "priceOrigin": 646800,
-    "vat": 10,
-    "planId": 12,
-    "suffixId": 919
+    
 }
 ```
 **type**: loại phí: register(đăng ký mới), renew(duy trì), register-vn-service(phí dịch vụ đăng ký cho tên miền .vn), renew-vn-service(phí dịch vụ duy trì cho tên miền .vn), change-registrant(chuyển tên chủ thể), transfer(chuyển nhà đăng ký), registrar-lock(dịch vụ khóa tên miền cấp nhà đăng ký), registry-lock(dịch vụ khóa tên miền cấp Registry VNNIC), dnssec(phí DNSSEC)   
