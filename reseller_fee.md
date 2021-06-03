@@ -9,15 +9,13 @@ Tính toán giá của dịch vụ
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
- "serviceType": "hosting",  
- "action": "register",  
- "planName": "Gói A",  
- "name": "example.vn",
- "type": "wordpress-new", 
- "period": 12 
+ "serviceType": "domain",   
+ "action": "register",   
+ "name": "example.vn", 
+ "period": 1 
 }
 ```
-**serviceType**: dịch vụ ['hosting', 'email', 'vps']  
+**serviceType**: dịch vụ ['domain','hosting', 'email', 'vps']  
 **action**: hành động: register(đăng ký mới), renew(duy trì)  
 **planName**: Gói A, Gói B, Gói C(áp dụng cho dịch vụ khác tên miền)  
 **type**: Trường type trong danh sách gói cước(áp dụng cho dịch vụ khác tên miền)  
