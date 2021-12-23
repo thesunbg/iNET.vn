@@ -159,7 +159,8 @@ Gen ra DKIM cho gói email
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "id": 0
+   "id": 0,
+   "format": true
 }
 ```
 **id (bắt buộc)**: id gói email   
