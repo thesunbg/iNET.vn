@@ -290,15 +290,17 @@ Cập nhật nhóm email
 {
    "id": 0,
    "emailId": 0,
+   "distributionId": "",
    "name": "",
    "displayName": 0,
    "description": 0,
    "status": 0,
-   "emailMemberList": [{username: 'test'}, {username: 'test2'}]
+   "emailMemberList": [{username: "test", emailId: "", emailDistributionId: ""}, {username: "test2", emailId: "", emailDistributionId: ""}]
 }
 ```
 **id (bắt buộc)**: id nhóm email   
 **emailId (bắt buộc)**: id gói email   
+**distributionId (bắt buộc)**: Mã định dịnh danh nhóm email   
 **name (bắt buộc)**: tên nhóm   
 **displayName (bắt buộc)**: Tên hiển thị   
 **description**: mô tả   
