@@ -15,8 +15,9 @@
 * [Tạo mới nhóm email](#tạo-mới-nhóm-email)
 * [Cập nhật nhóm email](#cập-nhật-nhóm-email)
 * [Xóa nhóm email](#xóa-nhóm-email)
-* [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-cho-email)
+* [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-email)
 * [Remove cert](#Xóa-SSL-Let-encrypt-email)
+* [Kiểm tra lại bản ghi](#Kiểm-tra-bản-ghi-email)
 * [Đồng bộ tài khoản email](#Đồng-bộ-tài-khoản-email)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 
@@ -334,6 +335,20 @@ Xóa SSL đã cài đặt cho email
 }
 ```
 **id (bắt buộc)**: id gói email    
+
+## [Kiểm tra bản ghi](#Kiểm-tra-ban-ghi-email)
+Kiểm tra bản ghi email
+> **API:** /api/public/nslookup/v1/nslookup/lookup
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "domain": "",
+   "type": ""
+}
+```
+**domain (bắt buộc)**: subdomain webmail cần kiểm tra, ví dụ mail.example.com
+**type (bắt buộc)**: loại bản ghi cần kiêm tra, ví dụ: a, mx, txt
 
 ## [Xóa nhóm email](#delete-group-email)
 Xóa nhóm email   
