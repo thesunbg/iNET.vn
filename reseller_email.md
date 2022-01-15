@@ -310,8 +310,8 @@ Cập nhật nhóm email
 **status (bắt buộc)**: trạng thái   
 **emailMemberList (bắt buộc)**: Danh sách tài khoản email  
 
-## [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-cho-email)
-Cài đặt SSL cho email   
+## [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-email)
+Cài đặt SSL cho gói email   
 > **API:** /api/v1/mailproxy/createaclhttp
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
@@ -325,7 +325,7 @@ Cài đặt SSL cho email
 **serverName (bắt buộc)**: máy chủ email hiện tại, ví dụ https://mailer-0204.inet.vn:7071/service/admin/soap/
 
 ## [Remove cert](#Xóa-SSL-Let-encrypt-email)
-Xóa SSL đã cài đặt cho email  
+Xóa SSL đã cài đặt cho gói email  
 > **API:** /api/v1/mailproxy/delcert
 > **Phương thức:** POST  
 > **Dữ liệu data body mẫu(JSON):**   
