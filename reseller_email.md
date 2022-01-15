@@ -15,8 +15,8 @@
 * [Tạo mới nhóm email](#tạo-mới-nhóm-email)
 * [Cập nhật nhóm email](#cập-nhật-nhóm-email)
 * [Xóa nhóm email](#xóa-nhóm-email)
-* [Issue Let's encrypt](#Cài-đặt-SSL-Let's-encrypt-cho-email)
-* [Remove cert](#Xóa-SSL-Let's-encrypt-email)
+* [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-cho-email)
+* [Remove cert](#Xóa-SSL-Let-encrypt-email)
 * [Đồng bộ tài khoản email](#Đồng-bộ-tài-khoản-email)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 
@@ -309,7 +309,7 @@ Cập nhật nhóm email
 **status (bắt buộc)**: trạng thái   
 **emailMemberList (bắt buộc)**: Danh sách tài khoản email  
 
-## [Issue Let's encrypt](#Cài-đặt-SSL-Let's-encrypt-cho-email)
+## [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-cho-email)
 Cài đặt SSL cho email   
 > **API:** /api/v1/mailproxy/createaclhttp
 > **Phương thức:** POST  
@@ -323,7 +323,7 @@ Cài đặt SSL cho email
 **host (bắt buộc)**: subdomain truy cập webmail, ví dụ mail.domain.com    
 **serverName (bắt buộc)**: máy chủ email hiện tại, ví dụ https://mailer-0204.inet.vn:7071/service/admin/soap/
 
-## [Remove cert](#Xóa-SSL-Let's-encrypt-email)
+## [Remove cert](#Xóa-SSL-Let-encrypt-email)
 Xóa SSL đã cài đặt cho email  
 > **API:** /api/v1/mailproxy/delcert
 > **Phương thức:** POST  
