@@ -18,6 +18,7 @@
 * [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-email)
 * [Remove cert](#Xóa-SSL-Let-encrypt-email)
 * [Kiểm tra lại bản ghi](#Kiểm-tra-bản-ghi-email)
+* [Tài nguyên gói email](#Tài-nguyên-gói-email)
 * [Đồng bộ tài khoản email](#Đồng-bộ-tài-khoản-email)
 * [Danh sách gói cước](#danh-sách-gói-cước)
 
@@ -349,6 +350,53 @@ Kiểm tra bản ghi email
 ```
 **domain (bắt buộc)**: subdomain webmail cần kiểm tra, ví dụ mail.example.com
 **type (bắt buộc)**: loại bản ghi cần kiêm tra, ví dụ: a, mx, txt
+
+## [Tài nguyên gói email](#Tài-nguyên-gói-email)
+Thông tin tài nguyên gói email
+> **API:** /api/v1/email/gettotalquota
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   "id": ""
+}
+```
+**id (bắt buộc)**: id gói email
+
+> **Dữ liệu trả về(JSON):**   
+```
+{
+    "id": "",
+    "roidType": "email",
+    "customerId": "",
+    "status": "active",
+    "domainName": "example.vn",
+    "type": "email-new",
+    "dataExtend": {
+        "quotaCurrent": 13000,
+        "quotaLimit": 102400,
+        "quotaDefault": 0,
+        "accountLimit": 50,
+        "accountCurent": 13,
+        "distributionListLimit": 50,
+        "distributionListCurent": 0,
+        "totalQuotaUsed": 1,
+        "recordSPF": "v=spf1 a mx ip4:103.75.184.10 ~all",
+        "recordWebMail": "103.75.184.10",
+        "recordMx": "mail.example.vn",
+        "serverReceiveEmail": "mailer-0204.inet.vn",
+        "serverSendEmail": "mailer-0204.inet.vn"
+   },
+    "serverName": "https://mailer-0204.inet.vn:7071/service/admin/soap/",
+    "verifyStatus": "verified",
+    "gatewayDomainRelay": "example.vn",
+    "gatewayDomainTransport": "",
+    "emailAccountList": [],
+    "onlyInSystem": false,
+    "distributionLists": []
+}
+```
+
 
 ## [Xóa nhóm email](#delete-group-email)
 Xóa nhóm email   
