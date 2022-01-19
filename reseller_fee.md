@@ -1,7 +1,8 @@
 # [Biểu phí](#fee)
 * [Tính toán giá dịch vụ](#tính-toán-giá-dịch-vụ)
 * [Lấy biểu phí của đại lý](#lấy-biểu-phí-đại-lý)
-
+* [Lấy giá bán của đại lý](#lấy-giá-bán-đại-lý)
+* 
 ## [Tính toán giá dịch vụ](#tính-toán-giá-dịch-vụ)
 Tính toán giá của dịch vụ
 > **API:** /api/rms/v1/fee/getprice  
@@ -47,16 +48,29 @@ Lấy biểu phí của đại lý
  
 }
 ```
+
+## [Lấy giá bán của đại lý](#lấy-giá-bán-đại-lý)
+Lấy giá bán của đại lý
+> **API:** /api/rms/v1/feeselling/getbysuffixid
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{}
+```
+```
+```
 > **Dữ liệu trả về mẫu(JSON):**   
 ```
-{    
-    
-}
-```
-**type**: loại phí: register(đăng ký mới), renew(duy trì), register-vn-service(phí dịch vụ đăng ký cho tên miền .vn), renew-vn-service(phí dịch vụ duy trì cho tên miền .vn), change-registrant(chuyển tên chủ thể), transfer(chuyển nhà đăng ký), registrar-lock(dịch vụ khóa tên miền cấp nhà đăng ký), registry-lock(dịch vụ khóa tên miền cấp Registry VNNIC), dnssec(phí DNSSEC)   
-**serviceType**: dịch vụ ['domain', 'hosting', 'email', 'vps']  
-**price**: Giá dịch vụ đã chiết khấu,chưa bao gồm VAT  
-**priceOrigin**: Giá dịch vụ chưa chiết khấu  
-**vat**: Phần trăm VAT  
-**planId**: id của danh sách plan  <a href="https://github.com/thesunbg/iNET.vn/blob/master/reseller_hosting.md#danh-s%C3%A1ch-g%C3%B3i-c%C6%B0%E1%BB%9Bc">Danh sách gói cước</a>  
-**suffixId**: id của suffix trong <a href="https://github.com/thesunbg/iNET.vn/blob/master/reseller_domain.md#danh-s%C3%A1ch-%C4%91u%C3%B4i-t%C3%AAn-mi%E1%BB%81n">Danh sách đuôi tên miền</a>  
+{
+		"id": 19884,
+		"orgId": 4063,
+		"type": "register", // Loại register: đang ký mới, renew: giạn, transfer: chuyển NĐK
+		"serviceType": "domain",
+		"price": 770000, // Giá bán của đại lý cho khách hàng
+		"priceCost": 704000, // Giá gốc của iNET
+		"suffixId": 919,
+		"vat": 0,
+		"suffix": "vn",
+		"priority": 1
+	}
+``` 
