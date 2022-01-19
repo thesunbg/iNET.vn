@@ -56,13 +56,13 @@ Lấy giá bán của đại lý
 {
 	"id": 19884,
 	"orgId": 4063,
-	"type": "register", // Loại register: đang ký mới, renew: giạn, transfer: chuyển NĐK
+	"type": "register", // Loại register: đăng ký mới, renew: giạn, transfer: chuyển nhà đăng ký
 	"serviceType": "domain",
 	"price": 770000, // Giá bán của đại lý cho khách hàng
 	"priceCost": 704000, // Giá gốc của iNET
 	"suffixId": 919,
 	"vat": 0,
-	"suffix": "vn",
+	"suffix": "vn", // Loại tên miền vn, com, net...
 	"priority": 1
 }
 ``` 
