@@ -42,12 +42,6 @@ Tính toán giá của dịch vụ
 Lấy biểu phí của đại lý
 > **API:** /api/rms/v1/fee/getall  
 > **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
-```
-{
- 
-}
-```
 
 ## [Lấy giá bán của đại lý](#lấy-giá-bán-đại-lý)
 Lấy giá bán của đại lý
@@ -57,20 +51,18 @@ Lấy giá bán của đại lý
 ```
 {}
 ```
-```
-```
 > **Dữ liệu trả về mẫu(JSON):**   
 ```
 {
-		"id": 19884,
-		"orgId": 4063,
-		"type": "register", // Loại register: đang ký mới, renew: giạn, transfer: chuyển NĐK
-		"serviceType": "domain",
-		"price": 770000, // Giá bán của đại lý cho khách hàng
-		"priceCost": 704000, // Giá gốc của iNET
-		"suffixId": 919,
-		"vat": 0,
-		"suffix": "vn",
-		"priority": 1
-	}
+	"id": 19884,
+	"orgId": 4063,
+	"type": "register", // Loại register: đang ký mới, renew: giạn, transfer: chuyển NĐK
+	"serviceType": "domain",
+	"price": 770000, // Giá bán của đại lý cho khách hàng
+	"priceCost": 704000, // Giá gốc của iNET
+	"suffixId": 919,
+	"vat": 0,
+	"suffix": "vn",
+	"priority": 1
+}
 ``` 
