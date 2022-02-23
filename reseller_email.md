@@ -16,6 +16,7 @@
 * [Cập nhật nhóm email](#cập-nhật-nhóm-email)
 * [Xóa nhóm email](#xóa-nhóm-email)
 * [Issue Let's encrypt](#Cài-đặt-SSL-Let-encrypt-email)
+* [SSL-Let-encrypt-ACL](#Thông-tin-SSL-Let-encrypt-ACL)
 * [Remove cert](#Xóa-SSL-Let-encrypt-email)
 * [Kiểm tra lại bản ghi](#Kiểm-tra-bản-ghi-email)
 * [Tài nguyên gói email](#Tài-nguyên-gói-email)
@@ -322,8 +323,34 @@ Cài đặt SSL cho gói email
    "serverName": ""
 }
 ```
-**host (bắt buộc)**: subdomain truy cập webmail, ví dụ mail.domain.com    
+**host (bắt buộc)**: subdomain truy cập webmail, ví dụ mail.domain.com
 **serverName (bắt buộc)**: máy chủ email hiện tại, ví dụ https://mailer-0204.inet.vn:7071/service/admin/soap/
+
+## [SSL-Let-encrypt-ACL](#Thông-tin-SSL-Let-encrypt-ACL)
+Get SSL Let's encrypt ACL
+> **API:** /api/v1/mailproxy/getacl
+> **Phương thức:** POST  
+> **Dữ liệu data body mẫu(JSON):**   
+```
+{
+   host: "mail.domain.com"
+}
+```
+**host (bắt buộc)**: subdomain truy cập webmail, ví dụ mail.domain.com
+
+> **Dữ liệu trả về(JSON):**   
+```
+{
+    "code": 201,
+    "data": [
+        {   
+            "host": "mail.domain.com",
+            "id": 2018,
+            "name": "inet_mail.domain.com",
+        }
+    ],
+    "source": "developers.inet.vn"
+}
 
 ## [Remove cert](#Xóa-SSL-Let-encrypt-email)
 Xóa SSL đã cài đặt cho gói email  
@@ -332,10 +359,12 @@ Xóa SSL đã cài đặt cho gói email
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
+   "aclId": ""
    "id": ""
 }
 ```
-**id (bắt buộc)**: id gói email    
+**aclId (bắt buộc)**: id ACL lấy từ API /api/v1/mailproxy/getacl
+**id (bắt buộc)**: id gói email
 
 ## [Kiểm tra bản ghi](#Kiểm-tra-ban-ghi-email)
 Kiểm tra bản ghi email
