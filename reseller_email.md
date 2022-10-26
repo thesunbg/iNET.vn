@@ -66,7 +66,37 @@ Chi tiết gói email
 > **Dữ liệu data body mẫu(JSON):**   
 ```
 {
-   "id": 0
+    "id": "",
+    "roidType": "email",
+    "customerId": "",
+    "status": "active",
+    "domainName": "example.vn",
+    "type": "email-new",
+    "dataExtend": {
+        "quotaCurrent": 13000,
+        "quotaLimit": 102400,
+        "quotaDefault": 0,
+        "accountLimit": 50,
+        "accountCurent": 13,
+        "distributionListLimit": 50,
+        "distributionListCurent": 0,
+        "totalQuotaUsed": 1,
+        "recordSPF": "v=spf1 a mx ip4:103.75.184.10 ~all",
+        "recordSPFAddition": "v=spf1 a mx include:_spf.000nethost.com ~all",
+        "recordWebMail": "103.75.184.10",
+        "recordWebMailAddition": "103.57.220.29"",
+        "recordMx": "mail.example.vn",
+        "recordMxAddition":"mx.000nethost.com",
+        "serverReceiveEmail": "mailer-0204.inet.vn",
+        "serverSendEmail": "mailer-0204.inet.vn"
+   },
+    "serverName": "https://mailer-0204.inet.vn:7071/service/admin/soap/",
+    "verifyStatus": "verified",
+    "gatewayDomainRelay": "example.vn",
+    "gatewayDomainTransport": "",
+    "emailAccountList": [],
+    "onlyInSystem": false,
+    "distributionLists": []
 }
 ```
 **id (bắt buộc)**: id gói email   
